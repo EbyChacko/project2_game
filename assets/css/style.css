@@ -11,36 +11,96 @@ body{
     text-align: center;
 }
 .heading{
-    padding:40px;
     font-size: 200%;
 }
+a{
+    text-decoration: none;
+    color: rgb(146, 7, 114);
+}
 
-.game-area{
+.buttons{
     height: fit-content;
     background-color:rgb(107, 107, 107);
+    color:black;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items:center;
     flex-wrap:wrap;
     font-family: 'Rajdhani', sans-serif;
 }
-.tic-tac-toe{
+#tic-tac-toe{
     width:300px;
     height: 400px;
     background-color:rgb(172, 172, 172);
     margin:50px;
     padding: 20px;
+    cursor: pointer;
 }
-.calculator{
+#tic-tac-toe:hover{
+    background-color:rgb(226, 222, 187);
+}
+#calculator{
     width:300px;
     height: 400px;
     background-color:rgb(172, 172, 172);
     margin:50px;
     padding: 20px;
+    cursor: pointer;
+}
+
+#calculator:hover{
+    background-color:rgb(226, 222, 187);
 }
 #tic-tac-toe-gif{
     width:95%;
 }
 #calculator-gif{
     width:95%;
+}
+
+/* tic-tac-toe page formatting */
+
+#small-logo{
+    width:200px;
+    padding-left:20px;
+    float:left;
+}
+.heading-area{
+    width:100%;
+    height: fit-content;
+    background-color:rgb(75, 137, 133);
+    color:black;
+    display: flex;
+    justify-content:center;
+    font-family: 'Rajdhani', sans-serif;
+}
+.game-area{
+    float:none;
+    width:100%;
+    height: fit-content;
+    background-color:rgb(166, 166, 166);
+    color:black;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    font-family: 'Rajdhani', sans-serif;
+}
+.cell{
+    background-color: rgb(70, 70, 70);
+    flex: 0 0 100px;
+    width:100px;
+    height: 100px;
+    border:1px solid black;
+    cursor: pointer;
+}
+
+.cells{
+    align-items: center;
+    padding:50px;
+    float:none;
+    display:flex;
+    flex-wrap: wrap;
+    width:315px;
+
 }
