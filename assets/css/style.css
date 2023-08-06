@@ -105,6 +105,17 @@ a{
 .cell:hover{
     background-color: rgb(80, 80, 80);
 }
+.notification-area{
+    width:100%;
+    height:250px;
+    background-color:rgb(75, 137, 133);
+    color:rgb(255, 255, 255);
+    font-family: 'Rajdhani', sans-serif;
+}
+#notification{
+    margin:0;
+padding:50px;
+}
 .button{
     width:fit-content;
     padding:5px 15px 5px 15px;
