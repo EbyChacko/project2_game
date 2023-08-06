@@ -18,6 +18,20 @@
     </div>
 
     <div class="game-area">
+        <div id="player1" class="players">
+            <h3>Player 1</h3>
+            <form>
+                <fieldset class="fields">
+                    <legend>Player 1 Details...</legend>
+                    <div>
+                        <input type="text" placeholder="First Player Name" id="name1" required><br>
+                    </div>
+                    <div>
+                        <input type="submit" value="Set player" class="button" id="player1-btn">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
         <div class="cells">
             <div cellIndex="0" class="cell"></div>
             <div cellIndex="1" class="cell"></div>
@@ -29,10 +43,25 @@
             <div cellIndex="7" class="cell"></div>
             <div cellIndex="8" class="cell"></div>
         </div>
+        <div id="player2" class="players">
+            <h3>Player 2</h3>
+            <form>
+                <fieldset class="fields">
+                    <legend>Player 2 Details...</legend>
+                    <div>
+                        <input type="text" placeholder="Second Player Name" id="name2" required><br>
+                    </div>
+                    <div>
+                        <input type="submit" value="Set player" class="button" id="player2-btn">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
+
     <div class="heading-area">
         <h2 id="notification"></h2>
-        <button>Restart</button>
+        <button class="button" id="notification-button">Start Game</button>
     </div>
 
     <script src="assets/js/script.js"></script>
