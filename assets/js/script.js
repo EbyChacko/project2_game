@@ -7,6 +7,8 @@ let player2Btn = document.getElementById('player2-btn');
 let player2div = document.getElementById('player2');
 var name2 = '';
 
+let notificationArea = document.getElementsByClassName("notification-area")[0];
+let headingArea = document.getElementsByClassName("heading-area")[0];
 let notificationBtn = document.getElementById('notification-button');
 let notification = document.getElementById('notification');
 let currentPlayer;
@@ -15,6 +17,7 @@ let gameStatus = false;
 
 let clickedIndexes = ['', '', '', '', '', '', '', '', ''];
 let cells = document.getElementsByClassName('cell');
+let cellsContainer = document.getElementsByClassName('cells')[0];
 
 let winCells = [
     [0, 1, 2],
@@ -63,7 +66,7 @@ player2Btn.addEventListener('click', function () {
             notification.innerHTML = `Enter The Player 1 Name`;
         }
         else {
-            notification.innerHTML = `Let's Start The Game`;
+            notification.innerHTML = `Let's Start The Game! Click The Start button`;
         }
     }
 });
@@ -76,10 +79,10 @@ notificationBtn.addEventListener('click', function () {
     if (notificationBtn.textContent === "Start Game") {
 
         if (name1 === '' || name2 === '') {
-            notification.innerHTML = `Enter The Player Details First`;
+            notification.innerHTML = `Enter The Player's Details First`;
         }
         else {
-            notification.innerHTML = `Click the button to choose the first player`;
+            notification.innerHTML = `Click the Toss button to choose the first player`;
             notificationBtn.textContent = "Let's Toss";
         }
 
@@ -101,6 +104,10 @@ notificationBtn.addEventListener('click', function () {
         }
         startGame();
 
+    } else if (notificationBtn.textContent === "Restart") {
+        playAgain();
+    } else if (notificationBtn.textContent === "Play Again") {
+        playAgain();
     }
 }
 )
@@ -137,15 +144,20 @@ function updateCell(cell, index) {
 }
 
 function changePlayer() {
-    if (currentSymbol === "X") {
-        currentPlayer = name2;
-        currentSymbol = 'O';
-        notification.innerHTML = `${currentPlayer}'s Turn`;
+    if (!gameStatus) {
+        notification.innerHTML = `Game Draw`;
     }
     else {
-        currentPlayer = name1;
-        currentSymbol = 'X';
-        notification.innerHTML = `${currentPlayer}'s Turn`;
+        if (currentSymbol === "X") {
+            currentPlayer = name2;
+            currentSymbol = 'O';
+            notification.innerHTML = `${currentPlayer}'s Turn`;
+        }
+        else {
+            currentPlayer = name1;
+            currentSymbol = 'X';
+            notification.innerHTML = `${currentPlayer}'s Turn`;
+        }
     }
 }
 
@@ -155,9 +167,6 @@ function checkWinner() {
         let cell1 = clickedIndexes[win[0]];
         let cell2 = clickedIndexes[win[1]];
         let cell3 = clickedIndexes[win[2]];
-        console.log(cell1);
-        console.log(cell2);
-        console.log(cell3);
 
         if (cell1 == '' || cell2 == '' || cell3 == '') {
             continue;
@@ -170,19 +179,53 @@ function checkWinner() {
 
     for (let i = 0; i < clickedIndexes.length; i++) {
         if (clickedIndexes[i] === '') {
-          break;
+            break;
         }
         else if (i === clickedIndexes.length - 1) {
-          notification.innerHTML = `Game Draw`;
-          gameStatus = false;
+            notification.innerHTML = `Game Draw`;
+            gameStatus = false;
         }
-      }
-      
-      if (!winStatus) {
+    }
+
+    if (!winStatus) {
         changePlayer();
-      }
-      else {
+    }
+    else {
         notification.innerHTML = `${currentPlayer} wins!!!`;
         gameStatus = false;
-      }
+        notificationBtn.textContent = "Play Again";
+        if (currentSymbol === "X") {
+            notificationArea.style.backgroundColor = "#848a6c";
+            headingArea.style.backgroundColor = "#848a6c";
+        }
+        else {
+            notificationArea.style.backgroundColor = "#837458";
+            headingArea.style.backgroundColor = "#837458";
+        }
+    }
+}
+
+function playAgain() {
+    currentPlayer = "";
+    currentSymbol = "";
+    gameStatus = false;
+    clickedIndexes = ['', '', '', '', '', '', '', '', ''];
+    winStatus = false;
+    cellsContainer.innerHTML = `<div cellIndex="0" class="cell"></div>
+        <div cellIndex="1" class="cell"></div>
+        <div cellIndex="2" class="cell"></div>
+        <div cellindex="3" class="cell"></div>
+        <div cellindex="4" class="cell"></div>
+        <div cellindex="5" class="cell"></div>
+        <div cellindex="6" class="cell"></div>
+        <div cellindex="7" class="cell"></div>
+        <div cellindex="8" class="cell"></div>`;
+    for (let i = 0; i < cells.length; i++) {
+        let cell = cells[i];
+        cell.addEventListener('click', cellClick);
+    }
+    notificationBtn.textContent = "Let's Toss";
+    notification.innerHTML = `Click the button to choose the first player`;
+    notificationArea.style.backgroundColor = "rgb(75, 137, 133)";
+    headingArea.style.backgroundColor = "rgb(75, 137, 133)";
 }
