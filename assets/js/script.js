@@ -110,7 +110,7 @@ function cellClick(){
     }
 
     updateCell(this , cellIndex);
-    
+    changePlayer();
 }
 
 function updateCell(cell, index){
@@ -124,6 +124,17 @@ function updateCell(cell, index){
     }
 }
 
-
+function changePlayer(){
+    if(currentSymbol==="X"){
+        currentPlayer = name2;
+        currentSymbol = 'O';
+        notification.innerHTML = `${currentPlayer}'s Turn`;
+    }
+    else{
+        currentPlayer = name1;
+        currentSymbol = 'X';
+        notification.innerHTML = `${currentPlayer}'s Turn`;
+    }
+}
 
 
