@@ -16,6 +16,18 @@ let gameStatus = false;
 let clickedIndexes = ['', '', '', '', '', '', '', '', ''];
 let cells = document.getElementsByClassName('cell');
 
+let winCells = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+];
+let winStatus = false;
+
 /* set the player 1 name to the screen */
 
 player1Btn.addEventListener('click', function () {
@@ -102,39 +114,75 @@ function startGame() {
     }
 }
 
-function cellClick(){
+function cellClick() {
     let cellIndex = this.getAttribute('cellIndex');
 
-    if(clickedIndexes[cellIndex]!= "" || !gameStatus){
+    if (clickedIndexes[cellIndex] != "" || !gameStatus) {
         return;
     }
 
-    updateCell(this , cellIndex);
-    changePlayer();
+    updateCell(this, cellIndex);
+    checkWinner();
 }
 
-function updateCell(cell, index){
-    clickedIndexes[index]=currentSymbol;
-    cell.textContent=currentSymbol;
-    if(currentSymbol==="X"){
+function updateCell(cell, index) {
+    clickedIndexes[index] = currentSymbol;
+    cell.textContent = currentSymbol;
+    if (currentSymbol === "X") {
         cell.style.backgroundColor = ' #848a6c';
     }
-    else{
+    else {
         cell.style.backgroundColor = ' #837458';
     }
 }
 
-function changePlayer(){
-    if(currentSymbol==="X"){
+function changePlayer() {
+    if (currentSymbol === "X") {
         currentPlayer = name2;
         currentSymbol = 'O';
         notification.innerHTML = `${currentPlayer}'s Turn`;
     }
-    else{
+    else {
         currentPlayer = name1;
         currentSymbol = 'X';
         notification.innerHTML = `${currentPlayer}'s Turn`;
     }
 }
 
+function checkWinner() {
+    for (i = 0; i < winCells.length; i++) {
+        let win = winCells[i];
+        let cell1 = clickedIndexes[win[0]];
+        let cell2 = clickedIndexes[win[1]];
+        let cell3 = clickedIndexes[win[2]];
+        console.log(cell1);
+        console.log(cell2);
+        console.log(cell3);
 
+        if (cell1 == '' || cell2 == '' || cell3 == '') {
+            continue;
+        }
+        if (cell1 == cell2 && cell1 == cell3) {
+            winStatus = true;
+            break;
+        }
+    }
+
+    for (let i = 0; i < clickedIndexes.length; i++) {
+        if (clickedIndexes[i] === '') {
+          break;
+        }
+        else if (i === clickedIndexes.length - 1) {
+          notification.innerHTML = `Game Draw`;
+          gameStatus = false;
+        }
+      }
+      
+      if (!winStatus) {
+        changePlayer();
+      }
+      else {
+        notification.innerHTML = `${currentPlayer} wins!!!`;
+        gameStatus = false;
+      }
+}
