@@ -1,8 +1,22 @@
-/* set the player 1 name to the screen */
 
 let player1Btn = document.getElementById('player1-btn');
 let player1div = document.getElementById('player1');
 var name1 = '';
+
+let player2Btn = document.getElementById('player2-btn');
+let player2div = document.getElementById('player2');
+var name2 = '';
+
+let notificationBtn = document.getElementById('notification-button');
+let notification = document.getElementById('notification');
+let currentPlayer;
+let currentSymbol;
+let gameStatus = false;
+
+let clickedIndexes = ['', '', '', '', '', '', '', '', ''];
+let cells = document.getElementsByClassName('cell');
+
+/* set the player 1 name to the screen */
 
 player1Btn.addEventListener('click', function () {
     let name1Input = document.getElementById('name1');
@@ -23,9 +37,6 @@ player1Btn.addEventListener('click', function () {
 });
 
 /* set the player 2 name to the screen */
-let player2Btn = document.getElementById('player2-btn');
-let player2div = document.getElementById('player2');
-var name2 = '';
 
 player2Btn.addEventListener('click', function () {
     let name2Input = document.getElementById('name2');
@@ -46,11 +57,9 @@ player2Btn.addEventListener('click', function () {
 });
 
 /**
- * start game function
+ * notification Button functions
  */
-let notificationBtn = document.getElementById('notification-button');
-let notification = document.getElementById('notification');
-let currentPlayer;
+
 notificationBtn.addEventListener('click', function () {
     if (notificationBtn.textContent === "Start Game") {
 
@@ -62,18 +71,59 @@ notificationBtn.addEventListener('click', function () {
             notificationBtn.textContent = "Let's Toss";
         }
 
-    }else if(notificationBtn.textContent === "Let's Toss"){
+    } else if (notificationBtn.textContent === "Let's Toss") {
         let toss = Math.random();
         if (toss < 0.5) {
             currentPlayer = name1;
+            currentSymbol = 'X';
             notification.innerHTML = `${currentPlayer}'s Turn`;
             notificationBtn.textContent = "Restart";
+            gameStatus = true;
         }
         else {
             currentPlayer = name2;
+            currentSymbol = 'O';
             notification.innerHTML = `${currentPlayer}'s Turn`;
             notificationBtn.textContent = "Restart";
+            gameStatus = true;
         }
+        startGame();
+
     }
 }
 )
+
+
+
+function startGame() {
+    for (let i = 0; i < cells.length; i++) {
+        let cell = cells[i];
+        cell.addEventListener('click', cellClick);
+    }
+}
+
+function cellClick(){
+    let cellIndex = this.getAttribute('cellIndex');
+
+    if(clickedIndexes[cellIndex]!= "" || !gameStatus){
+        return;
+    }
+
+    updateCell(this , cellIndex);
+    
+}
+
+function updateCell(cell, index){
+    clickedIndexes[index]=currentSymbol;
+    cell.textContent=currentSymbol;
+    if(currentSymbol==="X"){
+        cell.style.backgroundColor = ' #848a6c';
+    }
+    else{
+        cell.style.backgroundColor = ' #837458';
+    }
+}
+
+
+
+
