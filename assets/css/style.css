@@ -22,11 +22,12 @@ a {
 }
 
 .buttons {
+    padding:50px;
     height: fit-content;
     background-color: rgb(107, 107, 107);
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
     font-family: 'Rajdhani', sans-serif;
@@ -36,7 +37,7 @@ a {
     width: 300px;
     height: 400px;
     background-color: rgb(172, 172, 172);
-    margin: 50px;
+    /* margin: 50px 0; */
     padding: 20px;
     cursor: pointer;
 }
@@ -49,7 +50,7 @@ a {
     width: 300px;
     height: 400px;
     background-color: rgb(172, 172, 172);
-    margin: 50px;
+    /* margin: 50px 0; */
     padding: 20px;
     cursor: pointer;
 }
@@ -150,6 +151,7 @@ a {
 
 
 /* Calculator page formatting */
+
 .calc-big-container{
 display:flex;
 align-items: center;
@@ -178,9 +180,12 @@ justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-gap:10px;
 }
+.operator{
+
+}
 
 .display{
-    width:100%;
+    width:89%;
     height: 50px;
     background-color:  rgb(45, 45, 45);
     border-style: none;
@@ -202,6 +207,10 @@ justify-content: center;
     color:rgb(183, 183, 183);
 }
 
-.operator {
-    color:rgb(127, 195, 254);
+.calc-buttons button:active{
+    transform: scale(0.95);
+}
+
+.operator{
+    color:rgb(164, 255, 225);
 }
