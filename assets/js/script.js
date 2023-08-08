@@ -66,7 +66,7 @@ player2Btn.addEventListener('click', function () {
             notification.innerHTML = `Enter The Player 1 Name`;
         }
         else {
-            notification.innerHTML = `Let's Start The Game! Click The Start button`;
+            notification.innerHTML = `Let's Start The Game! Click The 'START' button`;
         }
     }
 });
@@ -76,37 +76,37 @@ player2Btn.addEventListener('click', function () {
  */
 
 notificationBtn.addEventListener('click', function () {
-    if (notificationBtn.textContent === "Start Game") {
+    if (notificationBtn.textContent === "START GAME") {
 
         if (name1 === '' || name2 === '') {
             notification.innerHTML = `Enter The Player's Details First`;
         }
         else {
-            notification.innerHTML = `Click the Toss button to choose the first player`;
-            notificationBtn.textContent = "Let's Toss";
+            notification.innerHTML = `Click the 'TOSS' button to choose the first player`;
+            notificationBtn.textContent = "TOSS";
         }
 
-    } else if (notificationBtn.textContent === "Let's Toss") {
+    } else if (notificationBtn.textContent === "TOSS") {
         let toss = Math.random();
         if (toss < 0.5) {
             currentPlayer = name1;
             currentSymbol = 'X';
             notification.innerHTML = `${currentPlayer}'s Turn`;
-            notificationBtn.textContent = "Restart";
+            notificationBtn.textContent = "RESTART";
             gameStatus = true;
         }
         else {
             currentPlayer = name2;
             currentSymbol = 'O';
             notification.innerHTML = `${currentPlayer}'s Turn`;
-            notificationBtn.textContent = "Restart";
+            notificationBtn.textContent = "RESTART";
             gameStatus = true;
         }
         startGame();
 
-    } else if (notificationBtn.textContent === "Restart") {
+    } else if (notificationBtn.textContent === "RESTART") {
         playAgain();
-    } else if (notificationBtn.textContent === "Play Again") {
+    } else if (notificationBtn.textContent === "PLAY AGAIN") {
         playAgain();
     }
 }
@@ -193,7 +193,7 @@ function checkWinner() {
     else {
         notification.innerHTML = `${currentPlayer} wins!!!`;
         gameStatus = false;
-        notificationBtn.textContent = "Play Again";
+        notificationBtn.textContent = "PLAY AGAIN";
         if (currentSymbol === "X") {
             notificationArea.style.backgroundColor = "#848a6c";
             headingArea.style.backgroundColor = "#848a6c";
@@ -224,8 +224,8 @@ function playAgain() {
         let cell = cells[i];
         cell.addEventListener('click', cellClick);
     }
-    notificationBtn.textContent = "Let's Toss";
-    notification.innerHTML = `Click the button to choose the first player`;
+    notificationBtn.textContent = "TOSS";
+    notification.innerHTML = `Click the 'TOSS' button to choose the first player`;
     notificationArea.style.backgroundColor = "rgb(75, 137, 133)";
     headingArea.style.backgroundColor = "rgb(75, 137, 133)";
 }
