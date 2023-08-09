@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 
 
-
+/* preset the values of body */
 body {
     margin: 0;
     background-color: rgb(62, 62, 62);
@@ -21,6 +21,7 @@ a {
     color: rgb(146, 7, 114);
 }
 
+/* properties of the index page button's Container*/
 .buttons {
     padding:50px;
     height: fit-content;
@@ -33,11 +34,11 @@ a {
     font-family: 'Rajdhani', sans-serif;
 }
 
+/* properties of the index page tic-tac-toe button*/
 #tic-tac-toe {
     width: 300px;
     height: 400px;
     background-color: rgb(172, 172, 172);
-    /* margin: 50px 0; */
     padding: 20px;
     cursor: pointer;
 }
@@ -45,12 +46,11 @@ a {
 #tic-tac-toe:hover {
     background-color: rgb(226, 222, 187);
 }
-
+/* properties of the index page calculator button*/
 #calculator {
     width: 300px;
     height: 400px;
     background-color: rgb(172, 172, 172);
-    /* margin: 50px 0; */
     padding: 20px;
     cursor: pointer;
 }
@@ -69,12 +69,14 @@ a {
 
 /* tic-tac-toe page formatting */
 
+/* logo size and position */
 #small-logo {
-    width: 200px;
-    padding-left: 20px;
+    width: 180px;
+    padding: 20px;
     float: left;
 }
 
+/* properties of heading area */
 .heading-area {
     width: 100%;
     height: fit-content;
@@ -85,6 +87,7 @@ a {
     font-family: 'Rajdhani', sans-serif;
 }
 
+/* properties of Game area */
 .game-area {
     float: none;
     width: 100%;
@@ -98,6 +101,7 @@ a {
     font-family: 'Rajdhani', sans-serif;
 }
 
+/* properties of Cells Conatiner */
 .cells {
     align-items: center;
     padding: 80px;
@@ -107,6 +111,8 @@ a {
     width: 315px;
 }
 
+
+/* properties of each cells */
 .cell {
     font-family: 'Raleway', sans-serif;
     background-color: rgb(70, 70, 70);
@@ -124,6 +130,7 @@ a {
     background-color: rgb(80, 80, 80);
 }
 
+/* properties of Notification area */
 .notification-area {
     width: 100%;
     height: 250px;
@@ -137,6 +144,7 @@ a {
     padding: 50px;
 }
 
+/* properties of Buttons in the tic tac toe page */
 .button {
     width: fit-content;
     padding: 5px 15px 5px 15px;
@@ -152,6 +160,7 @@ a {
 
 /* Calculator page formatting */
 
+/* properties of Calculator Container which keep the whole calculator centre of the page */
 .calc-big-container{
 display:flex;
 align-items: center;
@@ -159,6 +168,7 @@ justify-content: center;
 
 }
 
+/* properties of container of all the buttons */
 .calculator-container {
     margin-top: 50px;
     max-width: 300px;
@@ -175,31 +185,34 @@ justify-content: center;
     padding:20px 20px 40px;
 }
 
+/* properties of buttons in calculator */
 .calc-buttons{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap:10px;
 }
-.operator{
 
-}
-
+/* properties of Display Area of the calculator */
 .display{
     width:89%;
-    height: 50px;
+    height: 90px;
     background-color:  rgb(45, 45, 45);
     border-style: none;
     outline: none;
-    font-size: 25px;
-    font-weight: 100;
+    font-size: 30px;
     color:aliceblue;
     margin-bottom: 10px;
     text-align: right;
     color:rgb(183, 183, 183);
+    caret-color: transparent;
 }
+
+/* formating the buttons in the calculator */
 .calc-buttons button{
+    width:60px;
+    height: 60px;
     padding:10px;
-    border-radius: 6px;
+    border-radius: 50%;
     border: none;
     font-size: 20px;
     cursor: pointer;
@@ -207,6 +220,7 @@ justify-content: center;
     color:rgb(183, 183, 183);
 }
 
+/* makes a clicking effect when clicks each button in the calculator */
 .calc-buttons button:active{
     transform: scale(0.95);
 }
