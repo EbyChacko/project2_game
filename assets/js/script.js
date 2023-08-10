@@ -43,7 +43,7 @@ let winStatus = false;
             notification.innerHTML = `Enter The Player Name`;
         } else {
             player1div.innerHTML = `<h3>Player 1</h3>
-        <h2>Name : <strong>${name1}</strong></h2>`;
+        <h3>Name : <strong>${name1}</strong></h3>`;
             if (name2 === '') {
                 notification.innerHTML = `Enter The Player 2 Name`;
             } else {
@@ -63,7 +63,7 @@ player2Btn.addEventListener('click', function () {
     }
     else {
         player2div.innerHTML = `<h3>Player 2</h3>
-        <h2>Name : <strong>${name2}</strong></h2>`;
+        <h3>Name : <strong>${name2}</strong></h3>`;
         if (name1 === '') {
             notification.innerHTML = `Enter The Player 1 Name`;
         }

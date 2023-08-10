@@ -62,6 +62,7 @@ buttons.forEach(button => {
                         operator = '/';
                         operation = true;
                     }
+                }
                 break;
             case '1':
                 if (operation) {

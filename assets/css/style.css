@@ -23,12 +23,12 @@ a {
 
 /* properties of the index page button's Container*/
 .buttons {
-    padding:50px;
+    padding: 50px;
     height: fit-content;
     background-color: rgb(107, 107, 107);
     color: black;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     font-family: 'Rajdhani', sans-serif;
@@ -46,6 +46,7 @@ a {
 #tic-tac-toe:hover {
     background-color: rgb(226, 222, 187);
 }
+
 /* properties of the index page calculator button*/
 #calculator {
     width: 300px;
@@ -108,7 +109,7 @@ a {
     float: none;
     display: flex;
     flex-wrap: wrap;
-    width: 315px;
+    width: 307px;
 }
 
 
@@ -153,7 +154,7 @@ a {
     color: black;
     cursor: pointer;
     margin: 10px;
-    
+
 }
 
 
@@ -161,10 +162,10 @@ a {
 /* Calculator page formatting */
 
 /* properties of Calculator Container which keep the whole calculator centre of the page */
-.calc-big-container{
-display:flex;
-align-items: center;
-justify-content: center;
+.calc-big-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -182,49 +183,295 @@ justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     font-family: 'Raleway', sans-serif;
-    padding:20px 20px 40px;
+    padding: 20px 20px 40px;
 }
 
 /* properties of buttons in calculator */
-.calc-buttons{
-    display:grid;
+.calc-buttons {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap:10px;
+    grid-gap: 10px;
 }
 
 /* properties of Display Area of the calculator */
-.display{
-    width:89%;
+.display {
+    width: 89%;
     height: 90px;
-    background-color:  rgb(45, 45, 45);
+    background-color: rgb(45, 45, 45);
     border-style: none;
     outline: none;
     font-size: 30px;
-    color:aliceblue;
+    color: aliceblue;
     margin-bottom: 10px;
     text-align: right;
-    color:rgb(183, 183, 183);
+    color: rgb(183, 183, 183);
     caret-color: transparent;
 }
 
 /* formating the buttons in the calculator */
-.calc-buttons button{
-    width:60px;
+.calc-buttons button {
+    width: 60px;
     height: 60px;
-    padding:10px;
+    padding: 10px;
     border-radius: 50%;
     border: none;
     font-size: 20px;
     cursor: pointer;
     background-color: rgb(68, 68, 68);
-    color:rgb(183, 183, 183);
+    color: rgb(183, 183, 183);
 }
 
 /* makes a clicking effect when clicks each button in the calculator */
-.calc-buttons button:active{
+.calc-buttons button:active {
     transform: scale(0.95);
 }
 
-.operator{
-    color:rgb(164, 255, 225);
+.operator {
+    color: rgb(164, 255, 225);
+}
+
+
+/* 
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* CSS */
+
+}
+
+/* 
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #small-logo {
+        float: none;
+    }
+
+    /* properties of Cells Conatiner */
+    .cells {
+        padding: 40px;
+        width: 277px;
+    }
+
+
+    /* properties of each cells */
+    .cell {
+        flex: 0 0 90px;
+        width: 90px;
+        height: 90px;
+        font-size: 470%;
+    }
+
+    /* properties of Notification area */
+    .notification-area {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(75, 137, 133);
+        color: rgb(255, 255, 255);
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    #notification {
+        padding: 30px;
+    }
+
+}
+
+/* 
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #small-logo {
+        float: none;
+    }
+
+
+    /* properties of Cells Conatiner */
+    .cells {
+        align-items: center;
+        order: 0;
+        padding: 30px;
+        width: 247px;
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    #player1 {
+        order: 1;
+        width: 45%;
+        margin-bottom: 20px;
+        line-height: .5;
+    }
+
+    #player2 {
+        order: 2;
+        width: 45%;
+        margin-bottom: 20px;
+        line-height: .5;
+    }
+
+    #notification {
+        padding: 15px;
+        font-size: 150%;
+    }
+
+    /* properties of each cells */
+    .cell {
+        flex: 0 0 80px;
+
+        width: 80px;
+        height: 80px;
+        font-size: 470%;
+        color: white;
+        text-align: center;
+    }
+
+    /* properties of Notification area */
+    .notification-area {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(75, 137, 133);
+        color: rgb(255, 255, 255);
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    .calculator-container {
+        margin-top: 20px;
+        max-width: 270px;
+    }
+
+    .calc-buttons button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 75%;
+    }
+
+    /* properties of Notification area */
+    .notification-area {
+        height: 140px;
+    }
+
+
+}
+
+/* 
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (max-width: 480px) {
+
+    #small-logo {
+        float: none;
+        width: 160px;
+    }
+
+    /* properties of Cells Conatiner */
+    .cells {
+        align-items: center;
+        order: 0;
+        padding: 30px;
+        width: 186px;
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    #player1 {
+        order: 1;
+        width: 85%;
+        margin-bottom: 5px;
+        line-height:.4;
+    }
+
+    #player2 {
+        order: 2;
+        width: 85%;
+        margin-bottom: 5px;
+        line-height:.4;
+    }
+
+    #notification {
+        padding: 15px;
+        font-size: 100%;
+    }
+
+    /* properties of each cells */
+    .cell {
+        flex: 0 0 60px;
+        width: 60px;
+        height: 60px;
+        font-size: 360%;
+    }
+
+    /* properties of Notification area */
+    .notification-area {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(75, 137, 133);
+        color: rgb(255, 255, 255);
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    .calculator-container {
+        margin-top: 20px;
+        max-width: 270px;
+    }
+
+    .calc-buttons button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 70%;
+    }
+
+    /* properties of Notification area */
+    .notification-area {
+        height: 130px;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    /* properties of Cells Conatiner */
+    .cells {
+        align-items: center;
+        order: 0;
+        padding: 10px;
+        width: 157px;
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    /* properties of each cells */
+    .cell {
+        flex: 0 0 50px;
+        width: 50px;
+        height: 50px;
+        font-size: 360%;
+    }
+
+    #notification {
+        padding: 10px;
+        font-size: 100%;
+    }
+
+    .button {
+        font-size: 60%;
+    }
+     /* properties of Notification area */
+     .notification-area {
+        height: 110px;
+    }
 }
