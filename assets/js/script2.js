@@ -12,8 +12,12 @@ let operand1 = '';
 let operand2 = '';
 let operation = false;
 
-display.focus();
+display.focus();  /* it will keep the focus always on the display */
 
+
+/**
+ *  add event listeners to each of the cbutton click in the calculator
+ */
 buttons.forEach(button => {
     button.addEventListener('click', function () {
         let buttonValue = button.getAttribute('data-value');
@@ -21,11 +25,9 @@ buttons.forEach(button => {
             case 'AC':
                 display.value = '';
                 clearvalues();
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case 'DEL':
                 display.value = display.value.slice(0, -1);
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '%':
                 if (operand1 !== '' && operator !== '' && !operation) {
@@ -43,7 +45,6 @@ buttons.forEach(button => {
                         operation = true;
                     }
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '/':
                 if (operand1 !== '' && operator !== '' && !operation) {
@@ -61,8 +62,6 @@ buttons.forEach(button => {
                         operator = '/';
                         operation = true;
                     }
-                }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '1':
                 if (operation) {
@@ -71,7 +70,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "1";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '2':
                 if (operation) {
@@ -80,7 +78,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "2";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '3':
                 if (operation) {
@@ -89,7 +86,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "3";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '4':
                 if (operation) {
@@ -98,7 +94,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "4";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '5':
                 if (operation) {
@@ -107,7 +102,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "5";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '6':
                 if (operation) {
@@ -116,7 +110,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "6";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '7':
                 if (operation) {
@@ -125,7 +118,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "7";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '8':
                 if (operation) {
@@ -134,7 +126,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "8";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '9':
                 if (operation) {
@@ -143,7 +134,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "9";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '0':
                 if (operation || display.value === "" || display.value === '0') {
@@ -158,7 +148,6 @@ buttons.forEach(button => {
                 } else {
                     display.value += "00";
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '*':
                 if (operand1 !== '' && operator !== '' && !operation) {
@@ -176,7 +165,6 @@ buttons.forEach(button => {
                         operation = true;
                     }
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '+':
                 if (operand1 !== '' && operator !== '' && !operation) {
@@ -194,7 +182,6 @@ buttons.forEach(button => {
                         operation = true;
                     }
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '-':
                 if (operand1 !== '' && operator !== '' && !operation) {
@@ -212,7 +199,6 @@ buttons.forEach(button => {
                         operation = true;
                     }
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '.':
                 if (operation) {
@@ -235,7 +221,6 @@ buttons.forEach(button => {
                         }
                     }
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             case '=':
                 if (operand1 === '' || operator === '') {
@@ -247,7 +232,6 @@ buttons.forEach(button => {
                     operand1 = result;
                     operation = true;
                 }
-                document.getElementsByClassName('display')[0].focus();
                 break;
             default:
                 break;
