@@ -12,6 +12,8 @@ let operand1 = '';
 let operand2 = '';
 let operation = false;
 
+display.focus();
+
 buttons.forEach(button => {
     button.addEventListener('click', function () {
         let buttonValue = button.getAttribute('data-value');
@@ -144,16 +146,15 @@ buttons.forEach(button => {
                 document.getElementsByClassName('display')[0].focus();
                 break;
             case '0':
-                if (operation || display.value === "") {
-                    return;
+                if (operation || display.value === "" || display.value === '0') {
+                    display.value = '0';
                 } else {
                     display.value += "0";
                 }
                 break;
             case '00':
-                if (operation || display.value === "") {
-                    return;
-
+                if (operation || display.value === "" || display.value === "0") {
+                    display.value = '0';
                 } else {
                     display.value += "00";
                 }
@@ -214,19 +215,24 @@ buttons.forEach(button => {
                 document.getElementsByClassName('display')[0].focus();
                 break;
             case '.':
-                if (operator != '' && operation) {
-                    display.value = '.';
+                if (operation) {
+                    display.value = '0.';
                     operation = false;
                 } else {
-                    if (display.value == '') {
-                        display.value += '0.'
-                    }
-                    else if (display.value.includes(".")) {
-                        break;
-                    }
+                    if (operator != '' && operation) {
+                        display.value = '.';
+                        operation = false;
+                    } else {
+                        if (display.value == '') {
+                            display.value += '0.'
+                        }
+                        else if (display.value.includes(".")) {
+                            break;
+                        }
 
-                    else {
-                        display.value += ".";
+                        else {
+                            display.value += ".";
+                        }
                     }
                 }
                 document.getElementsByClassName('display')[0].focus();
@@ -262,7 +268,7 @@ function calculate() {
         output = parseFloat(operand1) + parseFloat(operand2);
     }
     clearvalues();
-    return (output);
+    return (output.toFixed(5));
 }
 
 function clearvalues() {
@@ -271,16 +277,23 @@ function clearvalues() {
     operand2 = '';
 }
 
-document.addEventListener("keyup", function(event) {
+document.addEventListener('keydown', function (event) {
+    event.preventDefault();
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        display.value = '';
+        clearvalues();
+    }
+});
+
+document.addEventListener("keydown", function (event) {
     let keyPressed = event.key;
     switch (keyPressed) {
-        case 'escape':
-            display.value = '';
-            clearvalues();
-            break;
         case '%':
             if (operand1 !== '' && operator !== '' && !operation) {
-                operand2 = display.value.slice(0, -1);;
+                operand2 = display.value;;
                 display.value = calculate();
                 operand1 = display.value;
                 operator = '%';
@@ -289,16 +302,15 @@ document.addEventListener("keyup", function(event) {
                 if (display.value === '') {
                     break;
                 } else {
-                    operand1 = display.value.slice(0, -1);
+                    operand1 = display.value;
                     operator = '%';
-                    operation = true;
-                    display.value = '';
+                    operation = true;;
                 }
             }
             break;
         case '/':
             if (operand1 !== '' && operator !== '' && !operation) {
-                operand2 = display.value.slice(0, -1);
+                operand2 = display.value;
                 display.value = calculate();
                 operand1 = display.value;
                 operator = '/';
@@ -308,16 +320,15 @@ document.addEventListener("keyup", function(event) {
                     break;
                 }
                 else {
-                    operand1 = display.value.slice(0, -1);
+                    operand1 = display.value;
                     operator = '/';
                     operation = true;
-                    display.value = '';
                 }
             }
             break;
         case '*':
             if (operand1 !== '' && operator !== '' && !operation) {
-                operand2 = display.value.slice(0, -1);;
+                operand2 = display.value;
                 display.value = calculate();
                 operand1 = display.value;
                 operator = '*';
@@ -326,17 +337,16 @@ document.addEventListener("keyup", function(event) {
                 if (display.value === '') {
                     break;
                 } else {
-                    operand1 = display.value.slice(0, -1);;
+                    operand1 = display.value;
                     operator = '*';
                     operation = true;
-                    display.value = '';
                 }
             }
 
             break;
         case '+':
             if (operand1 !== '' && operator !== '' && !operation) {
-                operand2 = display.value.slice(0, -1);;
+                operand2 = display.value;
                 display.value = calculate();
                 operand1 = display.value;
                 operator = '+';
@@ -345,17 +355,16 @@ document.addEventListener("keyup", function(event) {
                 if (display.value === '') {
                     break;
                 } else {
-                    operand1 = display.value.slice(0, -1);;
+                    operand1 = display.value;
                     operator = '+';
                     operation = true;
-                    display.value = '';
                 }
             }
             display.value = ""
             break;
         case '-':
             if (operand1 !== '' && operator !== '' && !operation) {
-                operand2 = display.value.slice(0, -1);;
+                operand2 = display.value;
                 display.value = calculate();
                 operand1 = display.value;
                 operator = '-';
@@ -364,10 +373,9 @@ document.addEventListener("keyup", function(event) {
                 if (display.value === '') {
                     break;
                 } else {
-                    operand1 = display.value.slice(0, -1);;
+                    operand1 = display.value;
                     operator = '-';
                     operation = true;
-                    display.value = '';
                 }
             }
             break;
@@ -382,6 +390,115 @@ document.addEventListener("keyup", function(event) {
                 operation = true;
             }
             break;
+        case '1':
+            if (operation) {
+                display.value = '1';
+                operation = false;
+            } else {
+                display.value += "1";
+            }
+            document.getElementsByClassName('display')[0].focus();
+            break;
+        case '2':
+            if (operation) {
+                display.value = '2';
+                operation = false;
+            } else {
+                display.value += "2";
+            }
+            document.getElementsByClassName('display')[0].focus();
+            break;
+        case '3':
+            if (operation) {
+                display.value = '3';
+                operation = false;
+            } else {
+                display.value += "3";
+            }
+            document.getElementsByClassName('display')[0].focus();
+            break;
+        case '4':
+            if (operation) {
+                display.value = '4';
+                operation = false;
+            } else {
+                display.value += "4";
+            }
+            document.getElementsByClassName('display')[0].focus();
+            break;
+        case '5':
+            if (operation) {
+                display.value = '5';
+                operation = false;
+            } else {
+                display.value += "5";
+            }
+            document.getElementsByClassName('display')[0].focus();
+            break;
+        case '6':
+            if (operation) {
+                display.value = '6';
+                operation = false;
+            } else {
+                display.value += "6";
+            }
+            document.getElementsByClassName('display')[0].focus();
+            break;
+        case '7':
+            if (operation) {
+                display.value = '7';
+                operation = false;
+            } else {
+                display.value += "7";
+            }
+            document.getElementsByClassName('display')[0].focus();
+            break;
+        case '8':
+            if (operation) {
+                display.value = '8';
+                operation = false;
+            } else {
+                display.value += "8";
+            }
+            document.getElementsByClassName('display')[0].focus();
+            break;
+        case '9':
+            if (operation) {
+                display.value = '9';
+                operation = false;
+            } else {
+                display.value += "9";
+            }
+            document.getElementsByClassName('display')[0].focus();
+            break;
+        case '0':
+            if (operation || display.value === "") {
+                return;
+            } else {
+                display.value += "0";
+            }
+            break;
+        case '.':
+            if (operation) {
+                display.value = '0.';
+                operation = false;
+            } else {
+                if (operator != '' && operation) {
+                    display.value = '.';
+                    operation = false;
+                } else {
+                    if (display.value == '') {
+                        display.value += '0.'
+                    }
+                    else if (display.value.includes(".")) {
+                        break;
+                    }
+
+                    else {
+                        display.value += ".";
+                    }
+                }
+            }
         default:
             break;
     }
