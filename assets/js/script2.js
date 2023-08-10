@@ -239,6 +239,12 @@ buttons.forEach(button => {
     });
 });
 
+
+/**
+ * 
+ * @returns this function calculate the operations in the calculator
+ */
+
 function calculate() {
     if (operator === "/") {
         output = parseFloat(operand1) / parseFloat(operand2);
@@ -255,16 +261,21 @@ function calculate() {
     return (output.toFixed(5));
 }
 
+/**
+ * this function clear the values of oprands and operator
+ */
 function clearvalues() {
     operator = '';
     operand1 = '';
     operand2 = '';
 }
 
+/* it prevent the default events to happen */
 document.addEventListener('keydown', function (event) {
     event.preventDefault();
 });
 
+/* It clear the display field and clear all the values saved in the operands and operators when "Esc key" pressed */
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         display.value = '';
@@ -272,6 +283,9 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+/**
+ * add event listeners to key press events for the calculator
+ */
 document.addEventListener("keydown", function (event) {
     let keyPressed = event.key;
     switch (keyPressed) {
