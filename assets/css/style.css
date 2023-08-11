@@ -171,6 +171,7 @@ a {
 
 /* properties of container of all the buttons */
 .calculator-container {
+    position: relative;
     margin-top: 50px;
     max-width: 300px;
     width: 100%;
@@ -226,9 +227,13 @@ a {
     transform: scale(0.95);
 }
 
-.operator {
-    color: rgb(164, 255, 225);
+.close-button {
+    width:30px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 
 
 /* 
@@ -263,8 +268,8 @@ a {
         height: 350px;
     }
 
-    .heading h5{
-        margin-top:10px;
+    .heading h5 {
+        margin-top: 10px;
     }
 
 
@@ -325,12 +330,13 @@ a {
         height: 300px;
         margin-bottom: 10px;
     }
-    .heading{
+
+    .heading {
         font-size: 170%;
     }
 
-    .heading h5{
-        margin-top:10px;
+    .heading h5 {
+        margin-top: 10px;
     }
 
     #small-logo {
@@ -417,12 +423,12 @@ a {
 @media (max-width: 480px) {
     #logo {
         width: 200px;
-        padding-top:20px;
+        padding-top: 20px;
         padding-bottom: 0;
     }
 
-    .heading h5{
-        margin-top:0;
+    .heading h5 {
+        margin-top: 0;
     }
 
     /* properties of the index page tic-tac-toe button*/
@@ -438,10 +444,12 @@ a {
         height: 220px;
         margin-bottom: 10px;
     }
-    h1{
+
+    h1 {
         font-size: 150%;
     }
-    .heading{
+
+    .heading {
         font-size: 130%;
     }
 
@@ -516,8 +524,9 @@ a {
     .notification-area {
         height: 130px;
     }
-    .buttons{
-        padding:20px;
+
+    .buttons {
+        padding: 20px;
     }
 
 }

@@ -298,7 +298,7 @@ document.addEventListener("keydown", function (event) {
     switch (keyPressed) {
         case '%':
             if (operand1 !== '' && operator !== '' && !operation) {
-                operand2 = display.value;;
+                operand2 = display.value;
                 display.value = calculate();
                 operand1 = display.value;
                 operator = '%';
