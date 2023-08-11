@@ -1,10 +1,12 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Edu-Fun logo](assets/images/readme-images/edu-fun-logo.webp)
 
-Welcome,
+Welcome to [Edu Fun Zone](https://ebychacko.github.io/project2_game/),
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Edu Fun Zone is a website that combines fun and education in two main features: a Tic Tac Toe game and a calculator. The Website is created Using HTML, CSS and JavaScript.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **July 26th, 2023**
+The game is turn-based, where the aim is to line up a trifecta of circles or crosses diagonally, horizontally, or vertically on a 3×3 square grid to achieve victory. 
+
+ The calculator feature can be used to perform basic arithmetic operations such as addition, subtraction, multiplication, division and persentage. The website is designed to be both entertaining and educational, providing a fun way for users to learn and practice their math skills.
 
 ## Codeanywhere Reminders
 
