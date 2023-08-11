@@ -137,15 +137,21 @@ buttons.forEach(button => {
                 }
                 break;
             case '0':
-                if (operation || display.value === "" || display.value === '0') {
-                    display.value = '0';
+                if (operation) {
+                    display.value = "0";
+                }
+                else if (display.value === "" || display.value === '0') {
+                    break;
                 } else {
                     display.value += "0";
                 }
                 break;
             case '00':
-                if (operation || display.value === "" || display.value === "0") {
-                    display.value = '0';
+                if (operation) {
+                    display.value = "0";
+                }
+                if (display.value === "" || display.value === "0") {
+                    break;
                 } else {
                     display.value += "00";
                 }
@@ -471,7 +477,9 @@ document.addEventListener("keydown", function (event) {
             document.getElementsByClassName('display')[0].focus();
             break;
         case '0':
-            if (operation || display.value === "") {
+            if (operation) {
+                display.value = '0';
+            } else if (display.value === "") {
                 return;
             } else {
                 display.value += "0";
