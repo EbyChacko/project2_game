@@ -134,7 +134,7 @@ a {
 /* properties of Notification area */
 .notification-area {
     width: 100%;
-    height: 250px;
+    height: 200px;
     background-color: rgb(75, 137, 133);
     color: rgb(255, 255, 255);
     font-family: 'Rajdhani', sans-serif;
@@ -142,7 +142,7 @@ a {
 
 #notification {
     margin: 0;
-    padding: 50px;
+    padding: 30px;
 }
 
 /* properties of Buttons in the tic tac toe page */
@@ -247,6 +247,27 @@ a {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    #logo {
+        width: 300px;
+    }
+
+    /* properties of the index page tic-tac-toe button*/
+    #tic-tac-toe {
+        width: 270px;
+        height: 350px;
+    }
+
+    /* properties of the index page calculator button*/
+    #calculator {
+        width: 270px;
+        height: 350px;
+    }
+
+    .heading h5{
+        margin-top:10px;
+    }
+
+
     #small-logo {
         float: none;
     }
@@ -286,6 +307,32 @@ a {
   */
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+    #logo {
+        width: 260px;
+    }
+
+    /* properties of the index page tic-tac-toe button*/
+    #tic-tac-toe {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    /* properties of the index page calculator button*/
+    #calculator {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .heading{
+        font-size: 170%;
+    }
+
+    .heading h5{
+        margin-top:10px;
+    }
+
     #small-logo {
         float: none;
     }
@@ -364,10 +411,40 @@ a {
 }
 
 /* 
-    ##Screen = B/w 320px to 479px
+    ##Screen upto 479px
   */
 
 @media (max-width: 480px) {
+    #logo {
+        width: 200px;
+        padding-top:20px;
+        padding-bottom: 0;
+    }
+
+    .heading h5{
+        margin-top:0;
+    }
+
+    /* properties of the index page tic-tac-toe button*/
+    #tic-tac-toe {
+        width: 180px;
+        height: 220px;
+        margin-bottom: 10px;
+    }
+
+    /* properties of the index page calculator button*/
+    #calculator {
+        width: 180px;
+        height: 220px;
+        margin-bottom: 10px;
+    }
+    h1{
+        font-size: 150%;
+    }
+    .heading{
+        font-size: 130%;
+    }
+
 
     #small-logo {
         float: none;
@@ -388,14 +465,14 @@ a {
         order: 1;
         width: 85%;
         margin-bottom: 5px;
-        line-height:.4;
+        line-height: .4;
     }
 
     #player2 {
         order: 2;
         width: 85%;
         margin-bottom: 5px;
-        line-height:.4;
+        line-height: .4;
     }
 
     #notification {
@@ -439,6 +516,9 @@ a {
     .notification-area {
         height: 130px;
     }
+    .buttons{
+        padding:20px;
+    }
 
 }
 
@@ -459,7 +539,7 @@ a {
         flex: 0 0 50px;
         width: 50px;
         height: 50px;
-        font-size: 360%;
+        font-size: 280%;
     }
 
     #notification {
@@ -470,8 +550,9 @@ a {
     .button {
         font-size: 60%;
     }
-     /* properties of Notification area */
-     .notification-area {
+
+    /* properties of Notification area */
+    .notification-area {
         height: 110px;
     }
 }

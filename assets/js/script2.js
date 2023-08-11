@@ -259,7 +259,7 @@ function calculate() {
         output = parseFloat(operand1) + parseFloat(operand2);
     }
     clearvalues();
-    return (output.toFixed(5));
+    return (output);
 }
 
 /**
