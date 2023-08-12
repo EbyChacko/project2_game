@@ -214,10 +214,12 @@ function checkWinner() {
         if (currentSymbol === "X") {
             notificationArea.style.backgroundColor = "#848a6c";
             headingArea.style.backgroundColor = "#848a6c";
+            document.body.style.backgroundColor = "#848a6c";
         }
         else {
             notificationArea.style.backgroundColor = "#837458";
             headingArea.style.backgroundColor = "#837458";
+            document.body.style.backgroundColor = "#837458";
         }
     }
 }
