@@ -11,6 +11,7 @@ let operator = '';
 let operand1 = '';
 let operand2 = '';
 let operation = false;
+let deleted = false;
 
 display.focus();  /* it will keep the focus always on the display */
 
@@ -27,6 +28,10 @@ buttons.forEach(button => {
                 clearvalues();
                 break;
             case 'DEL':
+                if(deleted){
+                    display.value="";
+                    deleted = false;
+                }
                 display.value = display.value.slice(0, -1);
                 break;
             case '%':
@@ -265,7 +270,10 @@ function calculate() {
         output = parseFloat(operand1) + parseFloat(operand2);
     }
     clearvalues();
+    deleted=true;
     return (output);
+
+
 }
 
 /**
@@ -364,8 +372,7 @@ document.addEventListener("keydown", function (event) {
                     operator = '+';
                     operation = true;
                 }
-            }
-            display.value = ""
+            }56
             break;
         case '-':
             if (operand1 !== '' && operator !== '' && !operation) {
