@@ -48,20 +48,49 @@ A unique colorfull logo that created using the Photoshop tool.
 
 When loading the TIC TAC TOE game page, We can see there are mainly 3 deferent sections. 
 
-1. Heading area :
+1. __Heading area__ : This area contains the heading "Let's Play TIC TAC TOE" and a link to the guide on how to play the game. Clicking on the link will take the user to the "how-to-play.html" page.
 
-In this area there is a heading "Let's Play TIC TAC TOE".
+2. __Game area__ : This is the main area where the players can interact with the screen. The center of this area has a 3x3 grid, which is the main game section. On either side of this grid, there are two player details sections where players can enter their names and submit them to start the game.
 
-Also a link to the guide to know how to play the tic tac toe game.
-If the user click that link, it will navigate to the how-to-play.html page.
+3. __Notification area__ : This is the second main area where all the instructions are given by the computer to the players as they interact with the screen. There are also two
 
-2. Game area : 
+Tic Tac Toe is a simple and fun game that can be played by anyone. Here are the steps to play Tic Tac Toe :
 
-This is the main area where the players can interact with screen. At the centre of this area we have a 3X3 grid, that is the main game section. And either side of this 3x3 grid we can see two Players details section where we enter the players name and submit for the game to start.
+1. Add Two Player Details.
+2. The player1 will have the icon "X" and the player two will have the icon "O".
+3. Click the "START" button.
+4. Click the "TOSS" button to choose the first player from the above two players.
+5. The player who win the toss will choose by the computer and will show in the notification area. And he/ she will play first.
+6. Players take turns placing their symbols until one player gets three in a row horizontally, vertically, or diagonally.
+7. If all squares are filled and no player has three in a row, the game is a tie.
+8. The game is over when one player gets three in a row or when the game is a tie.
+9. ENJOY The Game.
 
-3. Notification area : 
+Remember, Tic Tac Toe is a zero-sum game, which means that if both players are playing their best, then neither player will win. However, it is still a fun and educational game to play.
 
-This is the second main area where all the instructions are given by the computer to the players, as the players interacts to the screen. And also we have two buttons in this section. 
+__In this page :  Buttons, notification text and player details sections all are dianamic in behaviour.__
 
-These buttons and notifications are changes its behaviour according to the users response. 
+## calculator.html
+<img src="assets/images/readme-images/calculator-page.png" alt="Calculator page">
 
+The calculator page in the "Edu Fun Zone" website is designed to resemble the features of a basic calculator. Here are the key aspects of the calculator page:
+
+1. __Functionality__: The calculator page offers almost all the features of a basic calculator found on an iPhone. This includes the ability to perform basic arithmetic calculations, as well as persenatage calculation.
+
+2. __Keyboard Entry__: The calculator page accepts keyboard entry, allowing users to input numbers and perform calculations using the computer keyboard. This ensures convenience and ease of use for users who prefer typing over clicking buttons on the screen
+
+3. __Button Interface__: In addition to keyboard entry, the calculator page also provides buttons on the screen for users who prefer a more traditional calculator experience. These buttons mimic the layout and functionality of a basic calculator, allowing users to click on the buttons to input numbers and perform calculations
+
+4. __Proper Functioning__: The calculator page is designed to ensure that both the keyboard entry and the buttons on the screen work properly. This means that users can rely on accurate calculations and a smooth user experience when using the calculator on the website.
+
+## how-to-play.html
+
+<img src="assets/images/readme-images/how-to-play-page.png" alt="how-to-play page">
+
+The "How to Play" page on the "Edu Fun Zone" website provides detailed step-by-step instructions on how to play the Tic Tac Toe game. The page includes pictures to help users understand the game better.
+
+Overall, the "How to Play" page on the "Edu Fun Zone" website provides clear and concise instructions on how to play the Tic Tac Toe game, making it easy for users to enjoy the game.
+
+## feedback.html
+
+<img src="assets/images/readme-images/feedback-page.png" alt="feedback page">
