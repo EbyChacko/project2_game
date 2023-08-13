@@ -15,8 +15,8 @@
     </div>
     <a href="index.html"><img src="assets/images/go-back-button.png" alt="Go Back button" class="go-back-button"></a>
     <div class="feedback-form"> <!--Feedback form-->
-        <form action="https://formdump.codeinstitute.net" method="POST">
-            <fieldset class="fields">
+        <form method="POST">
+            <fieldset class="fields" id="field-set">
                 <legend>Feedback Form</legend>
                 <div>
                     <input id="name-field" type="text" name="full_name" placeholder="Your Full name" required>
@@ -30,14 +30,14 @@
                 
                 <textarea id="feedback" rows="5" cols="56" name="feedback" placeholder="Message....."></textarea>
                 <br>
-                <input type="submit" class="button" value="Submit">
+                <input type="submit" class="button" value="Submit" id="submit">
                 <input type="reset" value="Reset" class="button">
             </fieldset>
         </form>
 
 
     </div>
-
+    <script src="assets/js/script3.js"></script>
 </body>
 
 </html>
