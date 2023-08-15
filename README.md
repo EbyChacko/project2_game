@@ -139,9 +139,13 @@ The Edu Fun Zone website was created using the Visual Studio code editor and pus
 And a variety of technologies used, including:
 
 - HTML: HTML is the standard markup language used to create web pages. It provides the structure and content of the website.
+
 - CSS: CSS is used to style the website and control its layout. It is used to add colors, fonts, and other design elements to the website.
+
 - JavaScript: JavaScript is a programming language used to add interactivity and dynamic functionality to the website. It is used to create animations, validate forms, and more.
-- Photoshop: Photoshop is an image editor and wireframe tool used to create the wireframe for the website. It allows designers to create a visual representation of the website's layout and structure.
+
+- Photoshop: Photoshop is an image editor and wireframe tool used to create the wireframe for the website. It allows designers to create a visual representation of the website's layout and structure. It is also used to create the GIF files  as well.
+
 - GitHub: GitHub is a web-based platform used for version control and collaboration. It allows developers to store and manage their code, track changes, and work together on projects.
 
 Overall, these technologies were used to create a functional and visually appealing website that provides a fun and interactive learning experience for its users.
@@ -210,3 +214,50 @@ All pages of the site are achieving a score above 90 across the 4 categories in 
 
 - How to play
 <img src="assets/images/readme-images/lighthouse-mobile-how-to-play.png" alt="lighthouse report for how to play page in mobile">
+
+## Deployment
+
+The project was deployed on GitHub Pages. I used VS Code as a development environment where I commited all changes to git version control system.
+
+I used push command in VS Code to save changes into GitHub.
+
+To deploy a project I had to:
+
+* Log in to GitHub and click on repository to deploy ([project2_game](https://github.com/EbyChacko/project2_game.git))
+* select `Settings` and find GitHub Pages section on the left side bar.
+* from source select `Deploy from a branch` and then select `main` branch.
+* click `save` and page was deployed after auto-refresh.
+
+>  Site is published at https://ebychacko.github.io/project2_game/
+
+
+## Future Maintainability
+
+
+The future maintainability of the Edu Fun Zone website, which includes two main features - a calculator and a Tic Tac Toe game, will depend on several factors. Here are some considerations:
+
+1. Code structure: The website's code should be well-organized and follow best practices to ensure readability and maintainability. 
+
+2. Documentation: Clear and comprehensive documentation of the codebase, including comments and explanations of the logic and functionality, can greatly aid in future maintenance. It helps new developers understand the code and make necessary changes or updates.
+
+3. Version control: Utilizing version control systems like Git and GitHub allows for easy tracking of changes, collaboration among developers, and the ability to revert to previous versions if needed. This ensures that any modifications or updates can be managed effectively.
+
+4. Responsive design: As technology evolves, it is important to ensure that the website remains compatible with different devices and screen sizes. Implementing responsive design principles allows the website to adapt to various platforms, ensuring a consistent user experience.
+
+By considering these factors, the Edu Fun Zone website can be maintained effectively, allowing for future updates, improvements, and enhancements to its calculator and Tic Tac Toe game features.
+
+# Credits 
+
+* To complete this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+## Code
+
+Perplexity is an AI based chatbot, that helped to clear the doubts through out this project. I used perplexity to correct the code as well.
+
+* [Perplexity AI](https://www.perplexity.ai/)
+
+## Idea
+
+Youtube videos helped to find the project topic and watched a number of videos to get the idea.
+
+* [Youtube](https://www.youtube.com/)
