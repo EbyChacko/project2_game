@@ -94,3 +94,39 @@ Overall, the "How to Play" page on the "Edu Fun Zone" website provides clear and
 ## feedback.html
 
 <img src="assets/images/readme-images/feedback-page.png" alt="feedback page">
+
+The feedback form on the "Edu Fun Zone" website allows users to provide their feedback about the website or its content. The form collects the following details from the user:
+1. Name: Users are required to enter their name in the designated field.
+2. Mobile Number: Users are asked to provide their mobile number for contact purposes.
+3. Email: Users need to enter their email address for communication purposes.
+4. Feedback: There is a text area where users can write their feedback.
+
+Once the user submits the feedback, the website displays a thank-you message to acknowledge the submission. Additionally, the details submitted by the user, including their name, mobile number, email, and feedback, are displayed on the same page.
+
+<img src="assets/images/readme-images/feedback-return-msg.png" alt="feedback Return Message">
+
+The feedback form serves as a valuable tool for users to share their thoughts, suggestions, or concerns about the website. It allows the website administrators to gather feedback and make improvements based on user input. The inclusion of a thank-you message and displaying the submitted details on the same page enhances the user experience and provides transparency in the feedback process.
+
+# Wireframes
+
+The wireframe design created for the "Edu Fun Zone" website using Photoshop follows a structured approach to visualize the layout and functionality of the site. 
+
+The wireframe design process begins with thorough research and planning. This involves understanding the goals of the website, identifying user needs, and determining the information hierarchy of the design
+
+The wireframe serves as the skeleton of the website, focusing on the layout and structure rather than the content and aesthetics.
+
+1. index.html
+
+<img src="assets/images/readme-images/wireframe/index.webp" alt="index wireframe">
+
+2. tic-tac-toe.html
+
+<img src="assets/images/readme-images/wireframe/tic-tac-toe.webp" alt="index wireframe">
+
+3. calculator.html
+
+<img src="assets/images/readme-images/wireframe/calculator.webp" alt="index wireframe">
+
+4. feedback.html
+
+<img src="assets/images/readme-images/wireframe/feedback.webp" alt="index wireframe">

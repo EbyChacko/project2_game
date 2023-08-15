@@ -11,8 +11,8 @@ submitBtn.addEventListener('click', function() {
   let messageField = document.getElementById('feedback');
   let message = messageField.value;
 
-  feedbackForm.innerHTML = `<h2>Thanks For Your Valuable Feedback</h2>
-    <h3>You Sent the below details....</h3>
+  feedbackForm.innerHTML = `<h2>Thank You....😊 </h2>
+    <h3>You Sent the below details to us....</h3>
     <p> Name : ${name} </p>
     <p> Email : ${email}</p>
     <p> Mobile Number : ${mobile}</p>
