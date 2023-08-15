@@ -5,7 +5,7 @@
 /* preset the values of body */
 body {
     margin: 0;
-    background-color: rgb(75, 137, 133);
+    background-color: rgb(59, 108, 104);
     font-family: 'Rajdhani', sans-serif;
     color: white;
     text-align: center;
@@ -105,7 +105,7 @@ a {
 .heading-area {
     width: 100%;
     height: fit-content;
-    background-color: rgb(75, 137, 133);
+    background-color: rgb(59, 108, 104);
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -159,7 +159,7 @@ a {
 .notification-area {
     width: 100%;
     height: 200px;
-    background-color: rgb(75, 137, 133);
+    background-color: rgb(59, 108, 104);
     color: rgb(255, 255, 255);
     font-family: 'Rajdhani', sans-serif;
 }
@@ -198,7 +198,7 @@ a {
 .heading-area-calc {
     width: 100%;
     height: fit-content;
-    background-color: rgb(48, 98, 95);
+    background-color: rgb(59, 108, 104);
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -301,7 +301,7 @@ a {
 
 .feedback {
     padding: 10px;
-    background-color: rgb(7, 107, 109);
+    background-color: rgb(4, 69, 70);
 }
 
 .feedback a {
