@@ -11,6 +11,7 @@ let operator = '';
 let operand1 = '';
 let operand2 = '';
 let operation = false;
+let output;
 let deleted = false;
 
 display.focus();  /* it will keep the focus always on the display */

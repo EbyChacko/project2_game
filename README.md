@@ -130,3 +130,42 @@ The wireframe serves as the skeleton of the website, focusing on the layout and 
 4. feedback.html
 
 <img src="assets/images/readme-images/wireframe/feedback.webp" alt="index wireframe">
+
+
+# Technologies used
+
+The Edu Fun Zone website was created using the Visual Studio code editor and pushed to github to the remote repository https://github.com/EbyChacko/project2_game.git
+
+And a variety of technologies used, including:
+
+- HTML: HTML is the standard markup language used to create web pages. It provides the structure and content of the website.
+- CSS: CSS is used to style the website and control its layout. It is used to add colors, fonts, and other design elements to the website.
+- JavaScript: JavaScript is a programming language used to add interactivity and dynamic functionality to the website. It is used to create animations, validate forms, and more.
+- Photoshop: Photoshop is an image editor and wireframe tool used to create the wireframe for the website. It allows designers to create a visual representation of the website's layout and structure.
+- GitHub: GitHub is a web-based platform used for version control and collaboration. It allows developers to store and manage their code, track changes, and work together on projects.
+
+Overall, these technologies were used to create a functional and visually appealing website that provides a fun and interactive learning experience for its users.
+
+
+# Testing 
+
+## Functionality testing 
+
+ I used Chrome developer tools throughout the project for testing and solving problems with responsiveness and style issues.
+
+## Compatibility testing
+ Site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in Chrome developer tool. 
+ 
+ I tested on hardware devices such as: iphone, macbook, acer laptop etc.
+
+## Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Febychacko.github.io%2Fproject2_game%2F)
+- CSS
+  - No errors were found when passing through the official [(W3C CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=+https%3A%2F%2Febychacko.github.io%2Fproject2_game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- Java Script
+
+    - When passing through the [jshint.com](https://jshint.com/), it found that some variables were seen undefined. I declare the variable to resolve the problem. No other issues found during test.
+

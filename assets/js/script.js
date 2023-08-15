@@ -179,7 +179,7 @@ function changePlayer() {
  * this function check for the winner
  */
 function checkWinner() {
-    for (i = 0; i < winCells.length; i++) {
+    for (let i = 0; i < winCells.length; i++) {
         let win = winCells[i];
         let cell1 = clickedIndexes[win[0]];
         let cell2 = clickedIndexes[win[1]];
