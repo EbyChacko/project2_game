@@ -163,7 +163,7 @@ Overall, these technologies were used to create a functional and visually appeal
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Febychacko.github.io%2Fproject2_game%2F)
 - CSS
-  - No errors were found when passing through the official [(W3C CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=+https%3A%2F%2Febychacko.github.io%2Fproject2_game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the official [W3C CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=+https%3A%2F%2Febychacko.github.io%2Fproject2_game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - Java Script
 
