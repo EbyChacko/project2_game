@@ -258,6 +258,6 @@ Perplexity is an AI based chatbot, that helped to clear the doubts through out t
 
 ## Idea
 
-Youtube videos helped to find the project topic and watched a number of videos to get the idea.
+Youtube videos helped to find the project topic and watched a number of videos to get the idea how to create the tic-tac-toe and calculator.
 
 * [Youtube](https://www.youtube.com/)

@@ -1,3 +1,7 @@
+/**
+ * declare all the Calculator variables
+ */
+
 let submitBtn = document.getElementById('submit');
 let feedbackForm = document.getElementById('field-set');
 
@@ -10,6 +14,9 @@ submitBtn.addEventListener('click', function() {
   let mobile = mobileField.value;
   let messageField = document.getElementById('feedback');
   let message = messageField.value;
+/**
+ * Changes the innerHTML of the feedback form when submition of the form.
+ */
 
   feedbackForm.innerHTML = `<h2>Thank You....😊 </h2>
     <h3>You Sent the below details to us....</h3>

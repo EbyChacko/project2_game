@@ -79,12 +79,14 @@ a {
 /* tic-tac-toe page formatting */
 
 
+    /* container of the logo in small size */
 .sub-heading {
     background-color: rgb(47, 47, 47);
     width: 100%;
     height: 150px;
 }
 
+    /* container of the logo in small size */
 .question-link {
     padding: 20px;
     font-size: 120%;
@@ -150,7 +152,7 @@ a {
     color: white;
     text-align: center;
 }
-
+/* Changes the color of cell when mouse hover */
 .cell:hover {
     background-color: rgb(80, 80, 80);
 }
@@ -194,7 +196,7 @@ a {
     padding-bottom: 80px;
 
 }
-
+/* properties of container of heading area in calculator page */
 .heading-area-calc {
     width: 100%;
     height: fit-content;
@@ -262,36 +264,33 @@ a {
     transform: scale(0.95);
 }
 
-.close-button {
-    width: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
+/* add style to the how to play area sub heading */
 .sub-heading-how-to-play {
     background-color: rgb(47, 47, 47);
     width: 100%;
     height: 150px;
 }
-
+/* add style to the how to play area container */
 .how-to-play-area {
     padding-left: 40px;
     font-family: 'Rajdhani', sans-serif;
     align-items: center;
 }
-
+/* add style to the how to play area */
 .how-to-play {
     width: 90%;
     height: fit-content;
     padding: 20px;
-    text-align: left;
     font-size: 120%;
+}
+
+#text-content{
+    text-align: left;
 }
 
 .how-to-play img {
     padding: 5px;
-    height: 220px;
+    width: 220px;
 }
 
 .button-container {
@@ -309,7 +308,7 @@ a {
 }
 
 .feedback-form {
-    padding-top:50px;
+    padding-top: 50px;
     margin: 0 auto;
     width: 30%;
 }
@@ -317,55 +316,59 @@ a {
 .fields {
     border-radius: 20px;
     width: 90%;
-    border: 2px solid rgb(7, 95, 98) ;
-}
-#feedback{
-    padding:7px;
-    border-radius: 10px;
-    border:none;
-    background-color: rgb(198, 254, 254);
-    margin:4px;
-    color:rgb(13, 93, 103);
-    width:90%;
+    border: 2px solid rgb(7, 95, 98);
 }
 
-#name-field{
-    width:90%;
-    padding:7px;
+#feedback {
+    padding: 7px;
     border-radius: 10px;
-    border:none;
+    border: none;
     background-color: rgb(198, 254, 254);
-    color:rgb(13, 93, 103);
-    margin:4px;
-}
-#email-field{
-    width:90%;
-    padding:7px;
-    border-radius: 10px;
-    border:none;
-    background-color: rgb(198, 254, 254);
-    color:rgb(13, 93, 103);
-    margin:4px;
-}
-#phone-field{
-    width:90%;
-    padding:7px;
-    border-radius: 10px;
-    border:none;
-    background-color: rgb(198, 254, 254);
-    color:rgb(13, 93, 103);
-    margin:4px;
+    margin: 4px;
+    color: rgb(13, 93, 103);
+    width: 90%;
 }
 
-.go-back-button{
-    width:140px;
-    padding:10px 0 50px 10px;
-    float:left;
+#name-field {
+    width: 90%;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(198, 254, 254);
+    color: rgb(13, 93, 103);
+    margin: 4px;
 }
-.go-back-button-calc{
-    width:140px;
-    padding:10px 0 10px 0;
-    float:left;
+
+#email-field {
+    width: 90%;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(198, 254, 254);
+    color: rgb(13, 93, 103);
+    margin: 4px;
+}
+
+#phone-field {
+    width: 90%;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(198, 254, 254);
+    color: rgb(13, 93, 103);
+    margin: 4px;
+}
+
+.go-back-button {
+    width: 140px;
+    padding: 10px 0 50px 10px;
+    float: left;
+}
+
+.go-back-button-calc {
+    width: 140px;
+    padding: 10px 0 10px 0;
+    float: left;
 }
 
 /* 
@@ -451,13 +454,15 @@ a {
     .feedback-form {
         width: 60%;
     }
-    .go-back-button{
-        width:120px;
-        padding-right:90px;
+
+    .go-back-button {
+        width: 120px;
+        padding-right: 90px;
     }
-    .go-back-button-calc{
-        width:120px;
-        margin-left:20px;
+
+    .go-back-button-calc {
+        width: 120px;
+        margin-left: 20px;
     }
 
 }
@@ -573,12 +578,21 @@ a {
     .feedback-form {
         width: 80%;
     }
-    .go-back-button{
-        width:120px;
+
+    .go-back-button {
+        width: 120px;
     }
-    .go-back-button-calc{
-        width:120px;
+
+    .go-back-button-calc {
+        width: 120px;
         margin-left: 20px;
+    }
+    .how-to-play img {
+        width:40%;
+    }
+    .how-to-play-area {
+        align-items: center;
+        padding-left: 0px;
     }
 }
 
@@ -698,13 +712,20 @@ a {
     .feedback-form {
         width: 90%;
     }
-    .go-back-button{
-        width:100px;
+
+    .go-back-button {
+        width: 100px;
     }
 
-    .go-back-button-calc{
-        width:100px;
+    .go-back-button-calc {
+        width: 100px;
         margin-left: 20px;
+    }
+    .how-to-play img {
+        width:60%;
+    }
+    .how-to-play-area {
+        padding-left: 0px;
     }
 }
 
@@ -742,5 +763,11 @@ a {
     /* properties of Notification area */
     .notification-area {
         height: 110px;
+    }
+    .how-to-play-area {
+        padding-left: 0px;
+    }
+    .how-to-play img {
+        width:70%;
     }
 }
