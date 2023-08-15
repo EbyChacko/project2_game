@@ -169,3 +169,44 @@ Overall, these technologies were used to create a functional and visually appeal
 
     - When passing through the [jshint.com](https://jshint.com/), it found that some variables were seen undefined. I declare the variable to resolve the problem. No other issues found during test.
 
+## Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+
+### Desktop Results
+
+All pages of the site are achieving a score 100 across the 4 categories in lighthouse for the desktop view.
+
+- Home Page 
+<img src="assets/images/readme-images/lighthouse-home.png" alt="lighthouse report for home page in desktop">
+
+- TIC TAC TOE 
+<img src="assets/images/readme-images/lighthouse-tic-tac-toe.png" alt="lighthouse report for TIC TAC TOE page in desktop">
+
+- Calculator 
+<img src="assets/images/readme-images/lighthouse-calculator.png" alt="lighthouse report for calculator page in desktop">
+
+- feedback 
+<img src="aassets/images/readme-images/lighthouse-feedback.png" alt="lighthouse report for feedback page in desktop">
+
+- How to play
+<img src="assets/images/readme-images/lighthouse-how-to-play.png" alt="lighthouse report for how to play page in desktop">
+
+### Mobile Results
+
+All pages of the site are achieving a score above 90 across the 4 categories in lighthouse for the mobile view.
+
+- Home Page 
+<img src="assets/images/readme-images/lighthouse-mobile-Home.png" alt="lighthouse report for home page in mobile">
+
+- TIC TAC TOE 
+<img src="assets/images/readme-images/lighthouse-mobile-tic-tac-toe.png" alt="lighthouse report for TIC TAC TOE page in mobile">
+
+- Calculator 
+<img src="assets/images/readme-images/lighthouse-mobile-calculator.png" alt="lighthouse report for calculator page in mobile">
+
+- feedback 
+<img src="assets/images/readme-images/lighthouse-mobile-feedback.png" alt="lighthouse report for feedback page in mobile">
+
+- How to play
+<img src="assets/images/readme-images/lighthouse-mobile-how-to-play.png" alt="lighthouse report for how to play page in mobile">
