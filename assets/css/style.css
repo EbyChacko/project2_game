@@ -245,6 +245,9 @@ a {
     color: rgb(255, 255, 255);
     caret-color: transparent;
 }
+#display-label{
+        display:none;
+}
 
 /* formating the buttons in the calculator */
 .calc-buttons button {
@@ -317,7 +320,15 @@ a {
     border-radius: 20px;
     width: 90%;
     border: 2px solid rgb(7, 95, 98);
+    text-align: left;
 }
+legend{
+    text-align: center;
+}
+label{
+    padding-left: 20px;
+}
+
 
 #feedback {
     padding: 7px;

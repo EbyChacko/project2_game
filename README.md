@@ -152,7 +152,6 @@ Overall, these technologies were used to create a functional and visually appeal
 
 
 # Testing 
-
 ## Responsiveness & Functionality testing 
  I used Chrome developer tools throughout the project for testing and solving problems with responsiveness and style issues.
 
@@ -166,21 +165,17 @@ The Chrome Developer Tools are great for debugging any website.
  I tested on hardware devices such as: iphone, macbook, azuz laptop etc.
 
  Some of the screenshots are given below.
- ## Home page in deferent devices
+ ### Home page in deferent devices
   - iPad Mini
  <img src="assets/images/readme-images/Screenshot-ipad-mini.png" alt="Screenshot Ipad mini">
-
   - Surface pro
  <img src="assets/images/readme-images/Screenshot-surfacepro.png" alt="Screenshot Surface pro">
-
    - Iphone 12
  <img src="assets/images/readme-images/screenshot-iphone12.png" alt="Screenshot iPhone 12">
-
    - Samsung Galuxy S20 Ultra
  <img src="assets/images/readme-images/screenshot-samsung-galuxy-s20-ultra.png" alt="Screenshot Samsung Galuxy S20 Ultra">
 
- ## All Pages in Iphone 12 pro
-
+ ### All Pages in Iphone 12 pro
  - Home
  <img src="assets/images/readme-images/screenshot-iphone12.png" alt="iphone 12 Home">
 - Tic Tac Toe
@@ -193,7 +188,18 @@ The Chrome Developer Tools are great for debugging any website.
  <img src="assets/images/readme-images/iphone12-form.png" alt="iphone 12 feedback form">
 - submitted Feedback form
  <img src="assets/images/readme-images/iphone12-submited-fom.png" alt="iphone 12 submitted feedback form">
- 
+
+ ## Browser Compatibility testing
+ For the Edu Fun Zone website I tested the browser compatibility using Safari, Google Chrome, and Microsoft Edge, and everything was found to be good.
+
+## Errors
+During testing with the Chrome Developer Tools, an error was encountered: "Uncaught TypeError: Cannot read properties of null (reading 'querySelectorAll')". This error occurs when trying to access the querySelectorAll method on a null value, specifically a DOM element that doesn't exist.
+
+<img src="assets/images/readme-images/Error-tic-tac-toe.png" alt="Error found tic tac toe">
+
+To resolve this error, the script file was split for each page. By doing this, the code ensures that the DOM elements it needs to access are available before attempting to use the 'querySelectorAll' method.
+
+
 ## Validator Testing 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Febychacko.github.io%2Fproject2_game%2F)
@@ -201,8 +207,12 @@ The Chrome Developer Tools are great for debugging any website.
   - No errors were found when passing through the official [W3C CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=+https%3A%2F%2Febychacko.github.io%2Fproject2_game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - Java Script
-
     - When passing through the [jshint.com](https://jshint.com/), found some variables were seen undefined. I declare the variable to resolve the problem. No other issues found during test.
+## Accessibility Test
+During the Accessibility test conducted with WAVE, an error was identified: "Empty form label". This error occurs when a <label> tag is present in the form and associated with an input field, but does not contain any text.
+<img src="assets/images/readme-images/error-wave-empty label.png" alt="Error found empty form label">
+
+To resolve this error, the added a label for each input section in the website. By adding descriptive text within the <label> tags, the form controls are now properly labeled, ensuring accessibility for all users.
 
 ## Lighthouse
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
@@ -212,42 +222,30 @@ All pages of the site are achieving a score 100 across the 4 categories in light
 
 - Home Page 
 <img src="assets/images/readme-images/lighthouse-home.png" alt="lighthouse report for home page in desktop">
-
 - TIC TAC TOE 
 <img src="assets/images/readme-images/lighthouse-tic-tac-toe.png" alt="lighthouse report for TIC TAC TOE page in desktop">
-
 - Calculator 
 <img src="assets/images/readme-images/lighthouse-calculator.png" alt="lighthouse report for calculator page in desktop">
-
 - feedback 
 <img src="assets/images/readme-images/lighthouse-feedback.png" alt="lighthouse report for feedback page in desktop">
-
 - How to play
 <img src="assets/images/readme-images/lighthouse-how-to-play.png" alt="lighthouse report for how to play page in desktop">
 
 ### Mobile Results
 All pages of the site are achieving a score above 90 across the 4 categories in lighthouse for the mobile view.
-
 - Home Page 
 <img src="assets/images/readme-images/lighthouse-mobile-Home.png" alt="lighthouse report for home page in mobile">
-
 - TIC TAC TOE 
 <img src="assets/images/readme-images/lighthouse-mobile-tic-tac-toe.png" alt="lighthouse report for TIC TAC TOE page in mobile">
-
 - Calculator 
 <img src="assets/images/readme-images/lighthouse-mobile-calculator.png" alt="lighthouse report for calculator page in mobile">
-
 - feedback 
 <img src="assets/images/readme-images/lighthouse-mobile-feedback.png" alt="lighthouse report for feedback page in mobile">
-
 - How to play
 <img src="assets/images/readme-images/lighthouse-mobile-how-to-play.png" alt="lighthouse report for how to play page in mobile">
 
 ## Deployment
-
-The project was deployed on GitHub Pages. I used VS Code as a development environment where I commited all changes to git version control system.
-
-I used push command in VS Code to save changes into GitHub.
+The project was deployed on GitHub Pages. I used VS Code as a development environment where I commited all changes to git version control system. I used push command in VS Code to save changes into GitHub.
 
 To deploy a project I had to:
 
@@ -257,11 +255,7 @@ To deploy a project I had to:
 * click `save` and page was deployed after auto-refresh.
 
 >  Site is published at https://ebychacko.github.io/project2_game/
-
-
 ## Future Maintainability
-
-
 The future maintainability of the Edu Fun Zone website, which includes two main features - a calculator and a Tic Tac Toe game, will depend on several factors. Here are some considerations:
 
 1. Code structure: The website's code should be well-organized and follow best practices to ensure readability and maintainability. 
@@ -286,6 +280,6 @@ Perplexity is an AI based chatbot, that helped to clear the doubts through out t
 
 ## Idea
 
-Youtube videos helped to find the project topic and watched a number of videos to get the idea how to create the tic-tac-toe and calculator.
+Youtube videos helped to find the project topic and watched a number of videos to get the idea how to create the tic-tac-toe game and calculator.
 
 * [Youtube](https://www.youtube.com/)
