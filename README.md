@@ -153,17 +153,48 @@ Overall, these technologies were used to create a functional and visually appeal
 
 # Testing 
 
-## Functionality testing 
-
+## Responsiveness & Functionality testing 
  I used Chrome developer tools throughout the project for testing and solving problems with responsiveness and style issues.
 
+The Chrome Developer Tools are great for debugging any website.
+
 ## Compatibility testing
- Site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in Chrome developer tool. 
+ Site was tested across multiple virtual mobile devices and browsers. The Chrome Developer Tools also have an option to preview your website on different devices. This includes different types of mobile devices, iPads, tablets, and more 
  
- I tested on hardware devices such as: iphone, macbook, acer laptop etc.
+ I checked all supported devices in Chrome developer tool. 
+ 
+ I tested on hardware devices such as: iphone, macbook, azuz laptop etc.
 
+ Some of the screenshots are given below.
+ ## Home page in deferent devices
+  - iPad Mini
+ <img src="assets/images/readme-images/Screenshot-ipad-mini.png" alt="Screenshot Ipad mini">
+
+  - Surface pro
+ <img src="assets/images/readme-images/Screenshot-surfacepro.png" alt="Screenshot Surface pro">
+
+   - Iphone 12
+ <img src="assets/images/readme-images/screenshot-iphone12.png" alt="Screenshot iPhone 12">
+
+   - Samsung Galuxy S20 Ultra
+ <img src="assets/images/readme-images/screenshot-samsung-galuxy-s20-ultra.png" alt="Screenshot Samsung Galuxy S20 Ultra">
+
+ ## All Pages in Iphone 12 pro
+
+ - Home
+ <img src="assets/images/readme-images/screenshot-iphone12.png" alt="iphone 12 Home">
+- Tic Tac Toe
+ <img src="assets/images/readme-images/iphone12-tic-tac-to.png" alt="iphone 12 TIC TAC TOE">
+- Calculator
+ <img src="assets/images/readme-images/iphone12-calculator.png" alt="iphone 12 Calculator">
+- How to play
+ <img src="assets/images/readme-images/iphone12-how-to-play.png" alt="iphone 12 How to play">
+- Feedback form
+ <img src="assets/images/readme-images/iphone12-form.png" alt="iphone 12 feedback form">
+- submitted Feedback form
+ <img src="assets/images/readme-images/iphone12-submited-fom.png" alt="iphone 12 submitted feedback form">
+ 
 ## Validator Testing 
-
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Febychacko.github.io%2Fproject2_game%2F)
 - CSS
@@ -174,11 +205,9 @@ Overall, these technologies were used to create a functional and visually appeal
     - When passing through the [jshint.com](https://jshint.com/), found some variables were seen undefined. I declare the variable to resolve the problem. No other issues found during test.
 
 ## Lighthouse
-
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
 ### Desktop Results
-
 All pages of the site are achieving a score 100 across the 4 categories in lighthouse for the desktop view.
 
 - Home Page 
@@ -191,13 +220,12 @@ All pages of the site are achieving a score 100 across the 4 categories in light
 <img src="assets/images/readme-images/lighthouse-calculator.png" alt="lighthouse report for calculator page in desktop">
 
 - feedback 
-<img src="aassets/images/readme-images/lighthouse-feedback.png" alt="lighthouse report for feedback page in desktop">
+<img src="assets/images/readme-images/lighthouse-feedback.png" alt="lighthouse report for feedback page in desktop">
 
 - How to play
 <img src="assets/images/readme-images/lighthouse-how-to-play.png" alt="lighthouse report for how to play page in desktop">
 
 ### Mobile Results
-
 All pages of the site are achieving a score above 90 across the 4 categories in lighthouse for the mobile view.
 
 - Home Page 
