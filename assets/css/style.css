@@ -320,24 +320,30 @@ a {
     border-radius: 30px;
     margin: 0 auto;
     margin-top: 50px;
-    width: 30%;
+    width: 50%;
     border: 2px solid rgb(5, 65, 67);
+    text-align: center;
+}
+#field-set{
+    border: none;
+    margin:0 auto;
+    text-align: left;
 }
 
 .fields {
-    border: none;
     border-radius: 20px;
-    width: 90%;
-    text-align: left;
+    border: 2px solid rgb(5, 65, 67);
+    padding:20px;
 }
 
 legend {
     text-align: center;
 }
-
+input{
+    margin-top:5px;
+}
 label {
-    padding-left: 20px;
-
+    padding-left : 10px;
 }
 
 
@@ -356,8 +362,8 @@ label {
     padding: 7px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(198, 254, 254);
-    color: rgb(13, 93, 103);
+    background-color: rgb(214, 254, 254);
+    color: rgb(5, 53, 60);
     margin: 4px;
 }
 
@@ -470,11 +476,6 @@ label {
         width: 45%;
         margin-bottom: 20px;
         line-height: .5;
-    }
-
-
-    .feedback-form {
-        width: 60%;
     }
 
     .go-back-button {
@@ -595,10 +596,6 @@ label {
     /* properties of Notification area */
     .notification-area {
         height: 140px;
-    }
-
-    .feedback-form {
-        width: 80%;
     }
 
     .go-back-button {
@@ -733,10 +730,6 @@ label {
         padding: 20px;
     }
 
-    .feedback-form {
-        width: 90%;
-    }
-
     .go-back-button {
         width: 100px;
     }
@@ -752,9 +745,6 @@ label {
 
     .how-to-play-area {
         padding-left: 0px;
-    }
-    .feedback-form {
-        width: 80%;
     }
 }
 
