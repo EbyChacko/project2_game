@@ -171,7 +171,7 @@ Overall, these technologies were used to create a functional and visually appeal
 
 - Java Script
 
-    - When passing through the [jshint.com](https://jshint.com/), it found that some variables were seen undefined. I declare the variable to resolve the problem. No other issues found during test.
+    - When passing through the [jshint.com](https://jshint.com/), found some variables were seen undefined. I declare the variable to resolve the problem. No other issues found during test.
 
 ## Lighthouse
 

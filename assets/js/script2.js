@@ -403,6 +403,13 @@ document.addEventListener("keydown", function (event) {
                 operation = true;
             }
             break;
+            case 'Backspace':
+                if(deleted){
+                    display.value="";
+                    deleted = false;
+                }
+                display.value = display.value.slice(0, -1);
+                break;
         case '1':
             if (operation) {
                 display.value = '1';
