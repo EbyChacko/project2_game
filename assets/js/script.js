@@ -35,7 +35,7 @@ let winStatus = false;
 
 /* set the player 1 name to the screen */
 
-    player1Btn.addEventListener('click', function () {
+player1Btn.addEventListener('click', function () {
     let name1Input = document.getElementById('name1');
     if (name1Input !== null) {
         name1 = name1Input.value;
@@ -248,7 +248,8 @@ function playAgain() {
     }
     notificationBtn.textContent = "TOSS";
     notification.innerHTML = `Click the 'TOSS' button to choose the first player`;
-    notificationArea.style.backgroundColor = "rgb(75, 137, 133)";
-    headingArea.style.backgroundColor = "rgb(75, 137, 133)";
+    notificationArea.style.backgroundColor = "rgb(59, 108, 104)";
+    headingArea.style.backgroundColor = "rgb(59, 108, 104)";
+    document.body.style.backgroundColor = "rgb(59, 108, 104)";
 }
 
