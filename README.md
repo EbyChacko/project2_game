@@ -214,6 +214,10 @@ During the Accessibility test conducted with WAVE, an error was identified: "Emp
 
 To resolve this error, the added a label for each input section in the website. By adding descriptive text within the <label> tags, the form controls are now properly labeled, ensuring accessibility for all users.
 
+No other errors were found when passing through the official WAVE Web Accessibility Evaluation Tool. 
+
+[Check Result Here](https://wave.webaim.org/report#/https://ebychacko.github.io/project2_game/).
+
 ## Lighthouse
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
