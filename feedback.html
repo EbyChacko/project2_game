@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fun & Education">
-    <meta name="keywords"
-        content="fun-games, game, calculator, maths, mathematics, operations, operators, two-player-games">
+    <meta name="keywords" content="fun-games, game, calculator, maths, mathematics, operations, operators, two-player-games">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Edu-Fun Zone</title>
 </head>
@@ -19,26 +18,26 @@
     <a href="index.html"><img src="assets/images/go-back-button.png" alt="Go Back button" class="go-back-button"></a>
     <div class="feedback-form"> <!--Feedback form-->
         <form method="POST">
-            <fieldset id="field-set">
+            <fieldset class="fields" id="field-set">
                 <legend>Feedback Form</legend>
                 <div>
-                    <label for="name-field">Name :</label><br>
+                    <label for="name-field" class="hide">Name :</label><br>
                     <input id="name-field" type="text" name="full_name" placeholder="Your Full name" required>
                 </div>
                 <div>
-                    <label for="email-field">Email :</label><br>
+                    <label for="email-field" class="hide">Email :</label><br>
                     <input id="email-field" type="email" name="email" placeholder="Your email" required>
                 </div>
                 <div>
-                    <label for="phone-field">Mobile Number :</label><br>
+                    <label for="phone-field" class="hide">Mobile :</label><br>
                     <input id="phone-field" type="number" name="mobile" placeholder="Your Mobile Number" required>
                 </div>
-                <label for="feedback">Feedback :</label><br>
+                <label for="feedback" class="hide">Feedback :</label><br>
                 <textarea id="feedback" rows="5" cols="56" name="feedback" placeholder="Message....."></textarea>
                 <br>
+                <input type="submit" class="button" value="Submit" id="submit">
+                <input type="reset" value="Reset" class="button">
             </fieldset>
-            <input type="submit" class="button" value="Submit" id="submit">
-            <input type="reset" value="Reset" class="button">
         </form>
 
 

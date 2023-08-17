@@ -17,7 +17,9 @@ submitBtn.addEventListener('click', function () {
   /**
    * Changes the innerHTML of the feedback form when submition of the form.
    */
-  if (name !== "" && email !== "" && mobile !== "") {
+  if (name === "" && email === "" && mobile === "") {
+
+  } else {
     feedbackForm.innerHTML = `<h2>Thank You....😊 </h2>
   <h3>You Sent the below details to us....</h3>
   <p> Name : ${name} </p>

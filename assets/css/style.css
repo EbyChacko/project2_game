@@ -27,8 +27,9 @@ h5 {
 a {
     font-size: 120%;
     text-decoration: none;
-    color: rgb(146, 7, 114);
+    color: rgb(10, 83, 82);
 }
+
 
 /* properties of the index page button's Container*/
 .buttons {
@@ -44,8 +45,8 @@ a {
 
 /* properties of the index page tic-tac-toe button*/
 #tic-tac-toe {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
     background-color: rgb(225, 225, 225);
     padding: 20px;
     cursor: pointer;
@@ -57,8 +58,8 @@ a {
 
 /* properties of the index page calculator button*/
 #calculator {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
     background-color: rgb(225, 225, 225);
     padding: 20px;
     cursor: pointer;
@@ -76,17 +77,22 @@ a {
     width: 95%;
 }
 
+.feedback a:hover{
+    color:bisque;
+}
+
+
 /* tic-tac-toe page formatting */
 
 
-/* container of the logo in small size */
+    /* container of the logo in small size */
 .sub-heading {
     background-color: rgb(47, 47, 47);
     width: 100%;
     height: 150px;
 }
 
-/* container of the logo in small size */
+    /* container of the logo in small size */
 .question-link {
     padding: 20px;
     font-size: 120%;
@@ -112,6 +118,10 @@ a {
     display: flex;
     justify-content: center;
     font-family: 'Rajdhani', sans-serif;
+}
+
+.question-link a:hover {
+    color:bisque;
 }
 
 /* properties of Game area */
@@ -152,7 +162,6 @@ a {
     color: white;
     text-align: center;
 }
-
 /* Changes the color of cell when mouse hover */
 .cell:hover {
     background-color: rgb(80, 80, 80);
@@ -197,7 +206,6 @@ a {
     padding-bottom: 80px;
 
 }
-
 /* properties of container of heading area in calculator page */
 .heading-area-calc {
     width: 100%;
@@ -248,10 +256,6 @@ a {
     caret-color: transparent;
 }
 
-#display-label {
-    display: none;
-}
-
 /* formating the buttons in the calculator */
 .calc-buttons button {
     width: 60px;
@@ -276,14 +280,12 @@ a {
     width: 100%;
     height: 150px;
 }
-
 /* add style to the how to play area container */
 .how-to-play-area {
     padding-left: 40px;
     font-family: 'Rajdhani', sans-serif;
     align-items: center;
 }
-
 /* add style to the how to play area */
 .how-to-play {
     width: 90%;
@@ -292,7 +294,7 @@ a {
     font-size: 120%;
 }
 
-#text-content {
+#text-content{
     text-align: left;
 }
 
@@ -316,36 +318,16 @@ a {
 }
 
 .feedback-form {
-    padding: 20px;
-    border-radius: 30px;
+    padding-top: 50px;
     margin: 0 auto;
-    margin-top: 50px;
-    width: 50%;
-    border: 2px solid rgb(5, 65, 67);
-    text-align: center;
-}
-#field-set{
-    border: none;
-    margin:0 auto;
-    text-align: left;
+    width: 30%;
 }
 
 .fields {
     border-radius: 20px;
-    border: 2px solid rgb(5, 65, 67);
-    padding:20px;
+    width: 90%;
+    border: 2px solid rgb(7, 95, 98);
 }
-
-legend {
-    text-align: center;
-}
-input{
-    margin-top:5px;
-}
-label {
-    padding-left : 10px;
-}
-
 
 #feedback {
     padding: 7px;
@@ -362,8 +344,8 @@ label {
     padding: 7px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(214, 254, 254);
-    color: rgb(5, 53, 60);
+    background-color: rgb(198, 254, 254);
+    color: rgb(13, 93, 103);
     margin: 4px;
 }
 
@@ -398,6 +380,9 @@ label {
     padding: 10px 0 10px 0;
     float: left;
 }
+.hide{
+    display:none;
+}
 
 /* 
     ##Screen = B/w 768px to 1024px
@@ -406,19 +391,19 @@ label {
 @media (min-width: 768px) and (max-width: 1024px) {
 
     #logo {
-        width: 300px;
+        width: 270px;
     }
 
     /* properties of the index page tic-tac-toe button*/
     #tic-tac-toe {
-        width: 270px;
-        height: 350px;
+        width: 230px;
+        height: 290px;
     }
 
     /* properties of the index page calculator button*/
     #calculator {
-        width: 270px;
-        height: 350px;
+        width: 230px;
+        height: 290px;
     }
 
     .heading h5 {
@@ -478,6 +463,11 @@ label {
         line-height: .5;
     }
 
+
+    .feedback-form {
+        width: 60%;
+    }
+
     .go-back-button {
         width: 120px;
         padding-right: 90px;
@@ -497,20 +487,20 @@ label {
 @media (min-width: 481px) and (max-width: 767px) {
 
     #logo {
-        width: 260px;
+        width: 210px;
     }
 
     /* properties of the index page tic-tac-toe button*/
     #tic-tac-toe {
         width: 200px;
-        height: 300px;
+        height: 270px;
         margin-bottom: 10px;
     }
 
     /* properties of the index page calculator button*/
     #calculator {
         width: 200px;
-        height: 300px;
+        height: 270px;
         margin-bottom: 10px;
     }
 
@@ -598,6 +588,10 @@ label {
         height: 140px;
     }
 
+    .feedback-form {
+        width: 80%;
+    }
+
     .go-back-button {
         width: 120px;
     }
@@ -606,11 +600,9 @@ label {
         width: 120px;
         margin-left: 20px;
     }
-
     .how-to-play img {
-        width: 40%;
+        width:40%;
     }
-
     .how-to-play-area {
         align-items: center;
         padding-left: 0px;
@@ -623,7 +615,7 @@ label {
 
 @media (max-width: 480px) {
     #logo {
-        width: 200px;
+        width: 180px;
         padding-top: 20px;
         padding-bottom: 0;
     }
@@ -730,6 +722,10 @@ label {
         padding: 20px;
     }
 
+    .feedback-form {
+        width: 90%;
+    }
+
     .go-back-button {
         width: 100px;
     }
@@ -738,11 +734,9 @@ label {
         width: 100px;
         margin-left: 20px;
     }
-
     .how-to-play img {
-        width: 60%;
+        width:60%;
     }
-
     .how-to-play-area {
         padding-left: 0px;
     }
@@ -783,12 +777,10 @@ label {
     .notification-area {
         height: 110px;
     }
-
     .how-to-play-area {
         padding-left: 0px;
     }
-
     .how-to-play img {
-        width: 70%;
+        width:70%;
     }
 }
