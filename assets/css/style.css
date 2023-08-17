@@ -192,8 +192,15 @@ a {
     margin: 10px;
 
 }
+.fields-tic{
+    padding:20px;
+    border-radius: 20px;
+    border: 2px solid rgb(7, 95, 98);
+    }
 
-
+.fields-tic label{
+    line-height: 2;
+}
 
 /* Calculator page formatting */
 
