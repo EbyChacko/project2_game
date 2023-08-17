@@ -29,8 +29,8 @@ buttons.forEach(button => {
                 clearvalues();
                 break;
             case 'DEL':
-                if(deleted){
-                    display.value="";
+                if (deleted) {
+                    display.value = "";
                     deleted = false;
                 }
                 display.value = display.value.slice(0, -1);
@@ -271,7 +271,7 @@ function calculate() {
         output = parseFloat(operand1) + parseFloat(operand2);
     }
     clearvalues();
-    deleted=true;
+    deleted = true;
     return (output);
 
 
@@ -373,7 +373,7 @@ document.addEventListener("keydown", function (event) {
                     operator = '+';
                     operation = true;
                 }
-            }56
+            } 56
             break;
         case '-':
             if (operand1 !== '' && operator !== '' && !operation) {
@@ -403,13 +403,13 @@ document.addEventListener("keydown", function (event) {
                 operation = true;
             }
             break;
-            case 'Backspace':
-                if(deleted){
-                    display.value="";
-                    deleted = false;
-                }
-                display.value = display.value.slice(0, -1);
-                break;
+        case 'Backspace':
+            if (deleted) {
+                display.value = "";
+                deleted = false;
+            }
+            display.value = display.value.slice(0, -1);
+            break;
         case '1':
             if (operation) {
                 display.value = '1';

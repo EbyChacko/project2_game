@@ -77,22 +77,22 @@ a {
     width: 95%;
 }
 
-.feedback a:hover{
-    color:bisque;
+.feedback a:hover {
+    color: bisque;
 }
 
 
 /* tic-tac-toe page formatting */
 
 
-    /* container of the logo in small size */
+/* container of the logo in small size */
 .sub-heading {
     background-color: rgb(47, 47, 47);
     width: 100%;
     height: 150px;
 }
 
-    /* container of the logo in small size */
+/* container of the logo in small size */
 .question-link {
     padding: 20px;
     font-size: 120%;
@@ -121,7 +121,7 @@ a {
 }
 
 .question-link a:hover {
-    color:bisque;
+    color: bisque;
 }
 
 /* properties of Game area */
@@ -162,6 +162,7 @@ a {
     color: white;
     text-align: center;
 }
+
 /* Changes the color of cell when mouse hover */
 .cell:hover {
     background-color: rgb(80, 80, 80);
@@ -192,13 +193,14 @@ a {
     margin: 10px;
 
 }
-.fields-tic{
-    padding:20px;
+
+.fields-tic {
+    padding: 20px;
     border-radius: 20px;
     border: 2px solid rgb(7, 95, 98);
-    }
+}
 
-.fields-tic label{
+.fields-tic label {
     line-height: 2;
 }
 
@@ -213,6 +215,7 @@ a {
     padding-bottom: 80px;
 
 }
+
 /* properties of container of heading area in calculator page */
 .heading-area-calc {
     width: 100%;
@@ -287,12 +290,14 @@ a {
     width: 100%;
     height: 150px;
 }
+
 /* add style to the how to play area container */
 .how-to-play-area {
     padding-left: 40px;
     font-family: 'Rajdhani', sans-serif;
     align-items: center;
 }
+
 /* add style to the how to play area */
 .how-to-play {
     width: 90%;
@@ -301,7 +306,7 @@ a {
     font-size: 120%;
 }
 
-#text-content{
+#text-content {
     text-align: left;
 }
 
@@ -387,8 +392,9 @@ a {
     padding: 10px 0 10px 0;
     float: left;
 }
-.hide{
-    display:none;
+
+.hide {
+    display: none;
 }
 
 /* 
@@ -607,9 +613,11 @@ a {
         width: 120px;
         margin-left: 20px;
     }
+
     .how-to-play img {
-        width:40%;
+        width: 40%;
     }
+
     .how-to-play-area {
         align-items: center;
         padding-left: 0px;
@@ -741,9 +749,11 @@ a {
         width: 100px;
         margin-left: 20px;
     }
+
     .how-to-play img {
-        width:60%;
+        width: 60%;
     }
+
     .how-to-play-area {
         padding-left: 0px;
     }
@@ -784,10 +794,12 @@ a {
     .notification-area {
         height: 110px;
     }
+
     .how-to-play-area {
         padding-left: 0px;
     }
+
     .how-to-play img {
-        width:70%;
+        width: 70%;
     }
 }
