@@ -36,13 +36,13 @@ In this website, there are 6 deferent html pages.
 
 This is the main page of the website. It includes the following features:
 
-1. Edu Fun Zone logo : 
+* Edu Fun Zone logo : 
 
 A unique colorfull logo that created using the Photoshop tool.
 
-2. Two button images to navigate to the TIC TAC TOE game and the CALCULATOR.
+* Two button images to navigate to the TIC TAC TOE game and the CALCULATOR.
 
-3. Link to the feedback form
+* Link to the feedback form
 
 ## tic-tac-toe.html
 
@@ -50,11 +50,11 @@ A unique colorfull logo that created using the Photoshop tool.
 
 When loading the TIC TAC TOE game page, We can see there are mainly 3 deferent sections. 
 
-1. __Heading area__ : This area contains the heading "Let's Play TIC TAC TOE" and a link to the guide on how to play the game. Clicking on the link will take the user to the "how-to-play.html" page.
+* __Heading area__ : This area contains the heading "Let's Play TIC TAC TOE" and a link to the guide on how to play the game. Clicking on the link will take the user to the "how-to-play.html" page.
 
-2. __Game area__ : This is the main area where the players can interact with the screen. The center of this area has a 3x3 grid, which is the main game section. On either side of this grid, there are two player details sections where players can enter their names and submit them to start the game.
+* __Game area__ : This is the main area where the players can interact with the screen. The center of this area has a 3x3 grid, which is the main game section. On either side of this grid, there are two player details sections where players can enter their names and submit them to start the game.
 
-3. __Notification area__ : This is the second main area where all the instructions are given by the computer to the players as they interact with the screen. There are also two
+* __Notification area__ : This is the second main area where all the instructions are given by the computer to the players as they interact with the screen. There are also two
 
 Tic Tac Toe is a simple and fun game that can be played by anyone. Here are the steps to play Tic Tac Toe :
 
@@ -77,13 +77,13 @@ __In this page :  Buttons, notification text and player details sections all are
 
 The calculator page in the "Edu Fun Zone" website is designed to resemble the features of a basic calculator. Here are the key aspects of the calculator page:
 
-1. __Functionality__: The calculator page offers almost all the features of a basic calculator found on an iPhone. This includes the ability to perform basic arithmetic calculations, as well as persenatage calculation.
+* __Functionality__: The calculator page offers almost all the features of a basic calculator found on an iPhone. This includes the ability to perform basic arithmetic calculations, as well as persenatage calculation.
 
-2. __Keyboard Entry__: The calculator page accepts keyboard entry, allowing users to input numbers and perform calculations using the computer keyboard. This ensures convenience and ease of use for users who prefer typing over clicking buttons on the screen
+* __Keyboard Entry__: The calculator page accepts keyboard entry, allowing users to input numbers and perform calculations using the computer keyboard. This ensures convenience and ease of use for users who prefer typing over clicking buttons on the screen
 
-3. __Button Interface__: In addition to keyboard entry, the calculator page also provides buttons on the screen for users who prefer a more traditional calculator experience. These buttons mimic the layout and functionality of a basic calculator, allowing users to click on the buttons to input numbers and perform calculations
+* __Button Interface__: In addition to keyboard entry, the calculator page also provides buttons on the screen for users who prefer a more traditional calculator experience. These buttons mimic the layout and functionality of a basic calculator, allowing users to click on the buttons to input numbers and perform calculations
 
-4. __Proper Functioning__: The calculator page is designed to ensure that both the keyboard entry and the buttons on the screen work properly. This means that users can rely on accurate calculations and a smooth user experience when using the calculator on the website.
+* __Proper Functioning__: The calculator page is designed to ensure that both the keyboard entry and the buttons on the screen work properly. This means that users can rely on accurate calculations and a smooth user experience when using the calculator on the website.
 
 ## how-to-play.html
 
@@ -98,10 +98,10 @@ Overall, the "How to Play" page on the "Edu Fun Zone" website provides clear and
 <img src="assets/images/readme-images/feedback-page.png" alt="feedback page">
 
 The feedback form on the "Edu Fun Zone" website allows users to provide their feedback about the website or its content. The form collects the following details from the user:
-1. Name: Users are required to enter their name in the designated field.
-2. Mobile Number: Users are asked to provide their mobile number for contact purposes.
-3. Email: Users need to enter their email address for communication purposes.
-4. Feedback: There is a text area where users can write their feedback.
+* Name: Users are required to enter their name in the designated field.
+* Mobile Number: Users are asked to provide their mobile number for contact purposes.
+* Email: Users need to enter their email address for communication purposes.
+* Feedback: There is a text area where users can write their feedback.
 
 Once the user submits the feedback, the website displays a thank-you message to acknowledge the submission. Additionally, the details submitted by the user, including their name, mobile number, email, and feedback, are displayed on the same page.
 
@@ -257,7 +257,107 @@ All pages of the site are achieving a score above 90 across the 4 categories in 
 - How to play
 <img src="assets/images/readme-images/lighthouse-mobile-how-to-play.png" alt="lighthouse report for how to play page in mobile">
 
-## Deployment
+## Manual Testing
+Testing was performed on the following devices:
+* Laptop:
+  * Macbook Pro 2023 14 inch screen
+* Mobile Devices:
+  * iPhone 13 pro Max.
+
+following browsers are used in the macbook Pro:
+
+* Google Chrome
+* Safari
+* Microsoft Edge
+
+### __Home page__
+| Feature |  Testing Performed | Expected Outcome | Pass/Fail |
+| --- | --- | --- | --- |
+|Tic-Tac-Toe Gif image  | Hover over the div. | Background color Change | Pass|
+|Tic-Tac-Toe Gif image  | Click | Load tic-tac-toe.html| Pass|
+|Calculator Gif image   | Hover over the div. | Background color Change | Pass|
+|Calculator Gif image  | Click | Load calculator.html| Pass|
+|feedback text   | Hover over the text | Text color Change | Pass|
+|Feedback text   | Click | load feedback.html| Pass|
+
+### __Tic-Tac-Toe page__
+| Feature |  Testing Performed | Expected Outcome | Pass/Fail |
+| --- | --- | --- | --- |
+| How to play text | Hover over the text | Text color change | Pass |
+| How to play text | Click | Navigate to how-to-play.html | Pass |
+| "Set player" button in player 1 | Click without player details | Show a message "Enter The Player Name" | Pass|
+| "Set player" button in player 1 | Click with player details and before setting the player 2 details | Show a message "Enter The Player 2 Name" | Pass|
+| "Set player" button in player 1 | Click with player details and after setting the player 2 details | Show a message "Let's Start The Game" | Pass|
+| "Set player" button in player 2 | Click without player details | Show a message "Enter The Player Name" | Pass|
+| "Set player" button in player 2 | Click with player details and before setting the player 1 details | Show a message "Enter The Player 1 Name" | Pass|
+| "Set player" button in player 2 | Click with player details and after setting the player 1 details | Show a message "Let's Start The Game" | Pass|
+| "START GAME" Button | Click without the player details | Show a message "Enter the players details First" | Pass |
+| "START GAME" Button | Click with the player details | Show a message "Click the 'TOSS' button to choose the first player" and change the text on the button to "TOSS" | Pass |
+|"TOSS button" | Click the button | Computer choose the first player from the two players randomly and change the text o the button change to "RESTART" and start the game | Pass |
+|"RESTART" Button |Click button| Clear all the game and restart the game from the begining and the button text change to "TOSS"| pass|
+|"EXIT GAME" button | click Button | Exit the game and load Home page | Pass |
+|Cells for game | Hover Over each cell | Change color|Pass|
+|Cells For Game | click when game not started | Nothing should happen | Pass |
+|Cells For Game | click when game is on | Change color, change inner text, change the player for next turn  and test for the winner or the game is draw| Pass |
+
+### __Calculator page__
+| Feature |  Testing Performed | Expected Outcome | Pass/Fail |
+| --- | --- | --- | --- |
+| Key press Events |Any key press related to calculator (Numbers, operators,Enter, Esc or BackSpace) | It work as the normal calculator | Pass|
+|"HOME PAGE" Button | Click | Load the home page | Pass |
+|Buttons in the calculator | Click | Small Animation | Pass |
+|"AC" Button | Click | Clear the display | Pass |
+|"DEL" Button | Click | Delete one number from the display at the right hand side | Pass |
+|Number Buttons | Click | If display is empty, show the number in the display | Pass|
+|Number Buttons | Click | If display is not empty, add the numer to the right hand side of the display as the normal calculator | Pass|
+|Operator Buttons | Click | All working as a normal basic calculator | Pass |
+### __Feedback page__
+| Feature |  Testing Performed | Expected Outcome | Pass/Fail |
+| --- | --- | --- | --- |
+|"HOME PAGE" Button | Click | Load the home page | Pass |
+|"Submit" button | Click withot details | Show the fill the fields | Pass|
+|"Submit" button | Click with details | Show the filled details with a thanks message in the same window | Pass|
+|"Reset Button" | Click | Reset the form | Pass |
+
+### __How to play page__
+| Feature |  Testing Performed | Expected Outcome | Pass/Fail |
+| --- | --- | --- | --- |
+|"GO TO HOME PAGE" Button | Click | Load the home page | Pass |
+
+### __404 page__
+| Feature |  Testing Performed | Expected Outcome | Pass/Fail |
+| --- | --- | --- | --- |
+|"HOME PAGE" Button | Click | Load the home page | Pass |
+
+Additional testing was taken by friends and family on a variety of devices and screen sizes. They reported no issues.
+
+# Testing User Stories
+## Home page
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+|Wanted to show animated icons in the home page for the game and the calculator | created the animated gif icons using the photoshop and insered using the img tag. |
+|wanted a colourful logo | A colourfull logo created using Photoshop.|
+| wanted a feedback form | A feedback form implemented in the home page |
+|Colour Combinations | Used a unique colour combination troughout the website |
+
+## Tic Tac Toe page 
+| Goals | How are they achieved? |
+| :--- | :--- |
+|There should need to enter the details of the players| Gave the input field to enter the details and give a button to save the details for each player.
+|The play area need to be at the middle of the page | When the page designed, created the collection of the playing cells are aligned at the center of the page.|
+|needed a message text that help the player to understand what to do next | At the bottom of the play area, a dynamic message is always displayed, which changes based on the user actions.
+|Separate icon and colour for each player | There are two deferent colours and icons allocated for two players. When a player click the cel, the cell colour changes to the colour that allocated for that player and when one player wins the background color of the whole website temporarly changes to the colourof the player who wins.|
+|Navigation to home page | Add a "EXIT GAME" button to navigate to home page. |
+|Wanted HOW TO PLAY details | Added a separate HTML page to describe how to play the TIC TAC TOE game using step by step description and images.
+
+## Calculator page 
+| Goals | How are they achieved? |
+| :--- | :--- |
+|Needed to operate using keyboard | Add event listener for the keypress for all the numbers, operators, Enter, Esc and BackSpace. Also prevented the default keypress events|
+|Wanted a simple calculator | Created a fully functioning Calculator that perform arithmetic operations like Addition, Substraction, Multiplicatin, Division and Persentage calculation |
+
+# Deployment
 The project was deployed on GitHub Pages. I used VS Code as a development environment where I commited all changes to git version control system. I used push command in VS Code to save changes into GitHub.
 
 To deploy a project I had to:
@@ -268,16 +368,35 @@ To deploy a project I had to:
 * click `save` and page was deployed after auto-refresh.
 
 >  Site is published at https://ebychacko.github.io/project2_game/
-## Future Maintainability
+
+## How to Fork
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [project2_game](https://github.com/EbyChacko/project2_game.git)
+3. Click the Fork button in the top right corner.
+
+## How to Clone
+
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, [project2_game](https://github.com/EbyChacko/project2_game.git)
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+
+# Future Maintainability
 The future maintainability of the Edu Fun Zone website, which includes two main features - a calculator and a Tic Tac Toe game, will depend on several factors. Here are some considerations:
 
-1. Code structure: The website's code should be well-organized and follow best practices to ensure readability and maintainability. 
+* Code structure: The website's code should be well-organized and follow best practices to ensure readability and maintainability. 
 
-2. Documentation: Clear and comprehensive documentation of the codebase, including comments and explanations of the logic and functionality, can greatly aid in future maintenance. It helps new developers understand the code and make necessary changes or updates.
+* Documentation: Clear and comprehensive documentation of the codebase, including comments and explanations of the logic and functionality, can greatly aid in future maintenance. It helps new developers understand the code and make necessary changes or updates.
 
-3. Version control: Utilizing version control systems like Git and GitHub allows for easy tracking of changes, collaboration among developers, and the ability to revert to previous versions if needed. This ensures that any modifications or updates can be managed effectively.
+* Version control: Utilizing version control systems like Git and GitHub allows for easy tracking of changes, collaboration among developers, and the ability to revert to previous versions if needed. This ensures that any modifications or updates can be managed effectively.
 
-4. Responsive design: As technology evolves, it is important to ensure that the website remains compatible with different devices and screen sizes. Implementing responsive design principles allows the website to adapt to various platforms, ensuring a consistent user experience.
+* Responsive design: As technology evolves, it is important to ensure that the website remains compatible with different devices and screen sizes. Implementing responsive design principles allows the website to adapt to various platforms, ensuring a consistent user experience.
 
 By considering these factors, the Edu Fun Zone website can be maintained effectively, allowing for future updates, improvements, and enhancements to its calculator and Tic Tac Toe game features.
 
