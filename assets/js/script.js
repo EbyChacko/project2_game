@@ -92,18 +92,15 @@ notificationBtn.addEventListener('click', function () {
         let toss = Math.random();
         if (toss < 0.5) {
             currentPlayer = name1;
-            currentSymbol = 'X';
-            notification.innerHTML = `${currentPlayer}'s Turn`;
-            notificationBtn.textContent = "RESTART";
-            gameStatus = true;
+            currentSymbol = 'X';     
         }
         else {
             currentPlayer = name2;
             currentSymbol = 'O';
-            notification.innerHTML = `${currentPlayer}'s Turn`;
-            notificationBtn.textContent = "RESTART";
-            gameStatus = true;
         }
+        notification.innerHTML = `${currentPlayer}'s Turn`;
+        notificationBtn.textContent = "RESTART";
+        gameStatus = true;
         startGame();
 
     } else if (notificationBtn.textContent === "RESTART") {
@@ -112,7 +109,7 @@ notificationBtn.addEventListener('click', function () {
         playAgain();
     }
 }
-)
+);
 
 /**
  * set addEventListeners when game starting
