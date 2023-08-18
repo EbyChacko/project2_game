@@ -16,7 +16,7 @@ To access our website, simply visit https://ebychacko.github.io/project2_game/.
 # Features
 <img src="assets/images/readme-images/main-image.png" alt="main Image">
 
-In this website, there are 5 deferent html pages.
+In this website, there are 6 deferent html pages.
 
 1. Index.html
 
@@ -27,6 +27,8 @@ In this website, there are 5 deferent html pages.
 4. how-to-play.html
 
 5. feedback.html
+
+6. 404.html
 
 ## index.html
 
@@ -106,6 +108,13 @@ Once the user submits the feedback, the website displays a thank-you message to 
 <img src="assets/images/readme-images/feedback-return-msg.png" alt="feedback Return Message">
 
 The feedback form serves as a valuable tool for users to share their thoughts, suggestions, or concerns about the website. It allows the website administrators to gather feedback and make improvements based on user input. The inclusion of a thank-you message and displaying the submitted details on the same page enhances the user experience and provides transparency in the feedback process.
+
+## 404.html
+A 404 page is an error page that is displayed when a server cannot find the requested webpage.By implementing a custom 404 page in this project, we can enhance the user experience and provide a helpful and visually appealing error page.
+
+ Also it guides users back to the home page without closing the tag.
+
+<img src="assets/images/readme-images/404page.png" alt="404 page">
 
 # Wireframes
 
