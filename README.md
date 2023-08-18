@@ -221,7 +221,7 @@ To resolve this error, the script file was split for each page. By doing this, t
 During the Accessibility test conducted with WAVE, an error was identified: "Empty form label". This error occurs when a <label> tag is present in the form and associated with an input field, but does not contain any text.
 <img src="assets/images/readme-images/error-wave-empty label.png" alt="Error found empty form label">
 
-To resolve this error, the added a label for each input section in the website. By adding descriptive text within the <label> tags, the form controls are now properly labeled, ensuring accessibility for all users.
+To resolve this error, added a label for each input section in the website. By adding descriptive text within the `label` tags, the form controls are now properly labeled, ensuring accessibility for all users.
 
 No other errors were found when passing through the official WAVE Web Accessibility Evaluation Tool. 
 

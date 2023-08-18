@@ -13,23 +13,23 @@
 </head>
 
 <body>
-    <div class="sub-heading">
+    <div class="sub-heading"> <!--Here The logo comes-->
         <img id="small-logo" src="assets/images/edu-fun-logo.png" alt="Edu-Fun Logo">
     </div>
 
-    <div class="heading-area">
+    <div class="heading-area"> <!--Heading-->
         <h2>Let's Play 'TIC TAC TOE'</h2>
     </div>
-    <div class='question-link'>
+    <div class='question-link'> <!--Link to the how to play page-->
         <a href="how-to-play.html">Click here to see how to play TIC-TAC-TOE ???</a>
     </div>
 
 
-    <div class="game-area">
+    <div class="game-area"> <!--This is the whole conytainer of the-->
         <div id="player1" class="players">
             <h3>Player 1</h3>
             <form>
-                <fieldset class="fields-tic">
+                <fieldset class="fields-tic"> <!--Player 1 form-->
                     <div>
                         <label for="name1">Player 1 Details :</label><br>
                         <input type="text" placeholder="First Player Name" id="name1" required><br>
@@ -40,7 +40,7 @@
                 </fieldset>
             </form>
         </div>
-        <div class="cells">
+        <div class="cells"> <!--Game Cells-->
             <div cellIndex="0" class="cell"></div>
             <div cellIndex="1" class="cell"></div>
             <div cellIndex="2" class="cell"></div>
@@ -51,7 +51,7 @@
             <div cellindex="7" class="cell"></div>
             <div cellindex="8" class="cell"></div>
         </div>
-        <div id="player2" class="players">
+        <div id="player2" class="players"> <!--Player 2 form-->
             <h3>Player 2</h3>
             <form>
                 <fieldset class="fields-tic">
@@ -68,7 +68,7 @@
         </div>
     </div>
 
-    <div class="notification-area">
+    <div class="notification-area"> <!--Notification and buttons-->
         <h1 id="notification">Please Enter The Player's Details !</h1>
         <button class="button" id="notification-button">START GAME</button>
         <button class="button" id="exit-button" onclick="window.location.href = 'index.html'">EXIT GAME</button>
