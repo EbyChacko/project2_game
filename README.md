@@ -315,7 +315,7 @@ following browsers are used in the macbook Pro:
 | Feature |  Testing Performed | Expected Outcome | Pass/Fail |
 | --- | --- | --- | --- |
 |"HOME PAGE" Button | Click | Load the home page | Pass |
-|"Submit" button | Click withot details | Show the fill the fields | Pass|
+|"Submit" button | Click without details | Show the fill the fields | Pass|
 |"Submit" button | Click with details | Show the filled details with a thanks message in the same window | Pass|
 |"Reset Button" | Click | Reset the form | Pass |
 
