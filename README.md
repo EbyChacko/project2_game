@@ -8,6 +8,38 @@ The game is turn-based, where the aim is to line up a trifecta of circles or cro
 
  The calculator feature can be used to perform basic arithmetic operations such as addition, subtraction, multiplication, division and persentage. The website is designed to be both entertaining and educational, providing a fun way for users to learn and practice their math skills.
 
+# CONTENTS
+
+* [How to Use](#how-to-use)
+* [Features](#features)
+* [Wireframes](#wireframes)
+* [Technologies used](#technologies-used)
+* [Testing](#testing)
+  * [Responsiveness & Functionality Testing](#responsiveness-and-functionality-testing)
+  * [Compatibility Testing](#compatibility-testing)
+  * [Browser Compatibility testing](#browser-compatibility-testing)
+  * [Validator Testing](#validator-testing)
+  * [Accessibility Testing](#accessibility-testing)
+  * [Lighthouse](#lighthouse)
+    * [Desktop Results](#desktop-results )
+    * [Mobile Results](#mobile-results)
+  * [Manual Testing](#manual-testing)
+    * [Home Page](#home-page)
+    * [Tic Tac Toe page](#tic-tac-toe-page)
+    * [Calculator page](#calculator-page)
+    * [Feedback page](#feedback-page)
+    * [How to play page](#how-to-play-page)
+    * [404 page](#404-page)
+  * [Testing User Stories](#testing-user-stories)
+    * [Home Page](#home-page-1)
+    * [Tic Tac Toe page](#tic-tac-toe-page-1)
+    * [Calculator page](#calculator-page-1)
+* [Deployment](#deployment)
+  * [How to Fork](#how-to-fork)
+  * [How to clone](#how-to-clone)
+* [Future Maintainability](#future-maintainability)
+* [Credits](#credits)
+
  # How to Use
 
 To access our website, simply visit https://ebychacko.github.io/project2_game/. 
@@ -161,7 +193,7 @@ Overall, these technologies were used to create a functional and visually appeal
 
 
 # Testing 
-## Responsiveness & Functionality testing 
+## Responsiveness and Functionality testing 
  I used Chrome developer tools throughout the project for testing and solving problems with responsiveness and style issues.
 
 The Chrome Developer Tools are great for debugging any website.
@@ -201,14 +233,6 @@ The Chrome Developer Tools are great for debugging any website.
  ## Browser Compatibility testing
  For the Edu Fun Zone website I tested the browser compatibility using Safari, Google Chrome, and Microsoft Edge, and everything was found to be good.
 
-## Errors
-During testing with the Chrome Developer Tools, an error was encountered: "Uncaught TypeError: Cannot read properties of null (reading 'querySelectorAll')". This error occurs when trying to access the querySelectorAll method on a null value, specifically a DOM element that doesn't exist.
-
-<img src="assets/images/readme-images/Error-tic-tac-toe.png" alt="Error found tic tac toe">
-
-To resolve this error, the script file was split for each page. By doing this, the code ensures that the DOM elements it needs to access are available before attempting to use the 'querySelectorAll' method.
-
-
 ## Validator Testing 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Febychacko.github.io%2Fproject2_game%2F)
@@ -217,7 +241,7 @@ To resolve this error, the script file was split for each page. By doing this, t
 
 - Java Script
     - When passing through the [jshint.com](https://jshint.com/), found some variables were seen undefined. I declare the variable to resolve the problem. No other issues found during test.
-## Accessibility Test
+## Accessibility Testing
 During the Accessibility test conducted with WAVE, an error was identified: "Empty form label". This error occurs when a <label> tag is present in the form and associated with an input field, but does not contain any text.
 <img src="assets/images/readme-images/error-wave-empty label.png" alt="Error found empty form label">
 
@@ -257,6 +281,13 @@ All pages of the site are achieving a score above 90 across the 4 categories in 
 - How to play
 <img src="assets/images/readme-images/lighthouse-mobile-how-to-play.png" alt="lighthouse report for how to play page in mobile">
 
+## Errors
+During testing with the Chrome Developer Tools, an error was encountered: "Uncaught TypeError: Cannot read properties of null (reading 'querySelectorAll')". This error occurs when trying to access the querySelectorAll method on a null value, specifically a DOM element that doesn't exist.
+
+<img src="assets/images/readme-images/Error-tic-tac-toe.png" alt="Error found tic tac toe">
+
+To resolve this error, the script file was split for each page. By doing this, the code ensures that the DOM elements it needs to access are available before attempting to use the 'querySelectorAll' method.
+
 ## Manual Testing
 Testing was performed on the following devices:
 * Laptop:
@@ -280,7 +311,7 @@ following browsers are used in the macbook Pro:
 |feedback text   | Hover over the text | Text color Change | Pass|
 |Feedback text   | Click | load feedback.html| Pass|
 
-### __Tic-Tac-Toe page__
+### __Tic Tac Toe page__
 | Feature |  Testing Performed | Expected Outcome | Pass/Fail |
 | --- | --- | --- | --- |
 | How to play text | Hover over the text | Text color change | Pass |
@@ -331,8 +362,8 @@ following browsers are used in the macbook Pro:
 
 Additional testing was taken by friends and family on a variety of devices and screen sizes. They reported no issues.
 
-# Testing User Stories
-## Home page
+## Testing User Stories
+### __Home page__
 
 | Goals | How are they achieved? |
 | :--- | :--- |
@@ -341,7 +372,7 @@ Additional testing was taken by friends and family on a variety of devices and s
 | wanted a feedback form | A feedback form implemented in the home page |
 |Colour Combinations | Used a unique colour combination troughout the website |
 
-## Tic Tac Toe page 
+### __Tic Tac Toe page__
 | Goals | How are they achieved? |
 | :--- | :--- |
 |There should need to enter the details of the players| Gave the input field to enter the details and give a button to save the details for each player.
@@ -351,7 +382,7 @@ Additional testing was taken by friends and family on a variety of devices and s
 |Navigation to home page | Add a "EXIT GAME" button to navigate to home page. |
 |Wanted HOW TO PLAY details | Added a separate HTML page to describe how to play the TIC TAC TOE game using step by step description and images.
 
-## Calculator page 
+### __Calculator page__
 | Goals | How are they achieved? |
 | :--- | :--- |
 |Needed to operate using keyboard | Add event listener for the keypress for all the numbers, operators, Enter, Esc and BackSpace. Also prevented the default keypress events|
