@@ -9,9 +9,14 @@ The game is turn-based, where the aim is to line up a trifecta of circles or cro
  The calculator feature can be used to perform basic arithmetic operations such as addition, subtraction, multiplication, division and persentage. The website is designed to be both entertaining and educational, providing a fun way for users to learn and practice their math skills.
 
 # CONTENTS
-
 * [How to Use](#how-to-use)
 * [Features](#features)
+  * [index Page](#indexhtml)
+  * [Tic Tac Toe Page](#tic-tac-toehtml)
+  * [Calculator Page](#calculatorhtml)
+  * [How To Play Page](#how-to-playhtml)
+  * [Feedback Page](#feedbackhtml)
+  * [404 Page](#404html)
 * [Wireframes](#wireframes)
 * [Technologies used](#technologies-used)
 * [Testing](#testing)
@@ -41,13 +46,9 @@ The game is turn-based, where the aim is to line up a trifecta of circles or cro
 * [Credits](#credits)
 
  # How to Use
-
 To access our website, simply visit https://ebychacko.github.io/project2_game/. 
-
-
 # Features
 <img src="assets/images/readme-images/main-image.png" alt="main Image">
-
 In this website, there are 6 deferent html pages.
 
 1. Index.html
@@ -63,7 +64,6 @@ In this website, there are 6 deferent html pages.
 6. 404.html
 
 ## index.html
-
 <img src="assets/images/readme-images/index-page.png" alt="index page Image">
 
 This is the main page of the website. It includes the following features:
@@ -77,7 +77,6 @@ A unique colorfull logo that created using the Photoshop tool.
 * Link to the feedback form
 
 ## tic-tac-toe.html
-
 <img src="assets/images/readme-images/tic-tac-toe-main-image.png" alt="Tic Tac Toe game page">
 
 When loading the TIC TAC TOE game page, We can see there are mainly 3 deferent sections. 
@@ -118,7 +117,6 @@ The calculator page in the "Edu Fun Zone" website is designed to resemble the fe
 * __Proper Functioning__: The calculator page is designed to ensure that both the keyboard entry and the buttons on the screen work properly. This means that users can rely on accurate calculations and a smooth user experience when using the calculator on the website.
 
 ## how-to-play.html
-
 <img src="assets/images/readme-images/how-to-play-page.png" alt="how-to-play page">
 
 The "How to Play" page on the "Edu Fun Zone" website provides detailed step-by-step instructions on how to play the Tic Tac Toe game. The page includes pictures to help users understand the game better.
@@ -126,7 +124,6 @@ The "How to Play" page on the "Edu Fun Zone" website provides detailed step-by-s
 Overall, the "How to Play" page on the "Edu Fun Zone" website provides clear and concise instructions on how to play the Tic Tac Toe game, making it easy for users to enjoy the game.
 
 ## feedback.html
-
 <img src="assets/images/readme-images/feedback-page.png" alt="feedback page">
 
 The feedback form on the "Edu Fun Zone" website allows users to provide their feedback about the website or its content. The form collects the following details from the user:
@@ -149,7 +146,6 @@ A 404 page is an error page that is displayed when a server cannot find the requ
 <img src="assets/images/readme-images/404page.png" alt="404 page">
 
 # Wireframes
-
 The wireframe design created for the "Edu Fun Zone" website using Photoshop follows a structured approach to visualize the layout and functionality of the site. 
 
 The wireframe design process begins with thorough research and planning. This involves understanding the goals of the website, identifying user needs, and determining the information hierarchy of the design
@@ -172,9 +168,7 @@ The wireframe serves as the skeleton of the website, focusing on the layout and 
 
 <img src="assets/images/readme-images/wireframe/feedback.webp" alt="index wireframe">
 
-
 # Technologies used
-
 The Edu Fun Zone website was created using the Visual Studio code editor and pushed to github to the remote repository https://github.com/EbyChacko/project2_game.git
 
 And a variety of technologies used, including:
