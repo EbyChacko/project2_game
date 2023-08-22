@@ -765,6 +765,9 @@ a {
     .players {
         font-size: 90%;
     }
+    .how-to-play-area {
+        font-size: 80%;
+    }
 }
 
 
@@ -830,6 +833,14 @@ a {
     .feedback a {
         font-size: 90%;
     }
+    .how-to-play-area {
+        width: 90%;
+        padding: 10px;
+        font-size: 80%;
+    }
+    .how-to-play-area p{
+        text-align: justify;
+    }
 }
 
 @media (max-width: 300px) {
@@ -893,5 +904,4 @@ a {
     .heading-area-calc{
         font-size: 80%;
     }
-
 }
