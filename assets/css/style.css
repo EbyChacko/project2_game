@@ -11,13 +11,14 @@ body {
     text-align: center;
     align-items: center;
 }
+
 /* Main Logo conatiner properties */
 .heading {
     font-size: 200%;
     width: 100%;
     height: fit-content;
     background-color: rgb(47, 47, 47);
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 h5 {
@@ -47,7 +48,7 @@ a {
 /* properties of the index page tic-tac-toe button*/
 #tic-tac-toe {
     width: 250px;
-    height: 300px;
+    height: 320px;
     background-color: rgb(225, 225, 225);
     padding: 20px;
     cursor: pointer;
@@ -60,7 +61,7 @@ a {
 /* properties of the index page calculator button*/
 #calculator {
     width: 250px;
-    height: 300px;
+    height: 320px;
     background-color: rgb(225, 225, 225);
     padding: 20px;
     cursor: pointer;
@@ -82,9 +83,9 @@ a {
     color: bisque;
 }
 
-.back-button-container{
-width:100%;
-height: 60px;
+.back-button-container {
+    width: 100%;
+    height: 60px;
 }
 
 /* tic-tac-toe page formatting */
@@ -232,7 +233,7 @@ height: 60px;
 /* properties of container of all the buttons */
 .calculator-container {
     position: relative;
-    margin-top: 50px;
+    margin-top: 20px;
     max-width: 300px;
     width: 100%;
     border-radius: 12px;
@@ -311,6 +312,7 @@ height: 60px;
 #text-content {
     text-align: left;
 }
+
 /* add style to the how to play images */
 .how-to-play img {
     padding: 5px;
@@ -330,6 +332,7 @@ height: 60px;
 .feedback a {
     color: aliceblue;
 }
+
 /* add style to the feedback form */
 .feedback-form {
     padding-top: 20px;
@@ -449,9 +452,6 @@ height: 60px;
     .notification-area {
         width: 100%;
         height: 200px;
-        background-color: rgb(75, 137, 133);
-        color: rgb(255, 255, 255);
-        font-family: 'Rajdhani', sans-serif;
     }
 
     #notification {
@@ -578,9 +578,6 @@ height: 60px;
     .notification-area {
         width: 100%;
         height: 200px;
-        background-color: rgb(75, 137, 133);
-        color: rgb(255, 255, 255);
-        font-family: 'Rajdhani', sans-serif;
     }
 
     .calculator-container {
@@ -710,9 +707,6 @@ height: 60px;
     .notification-area {
         width: 100%;
         height: 200px;
-        background-color: rgb(75, 137, 133);
-        color: rgb(255, 255, 255);
-        font-family: 'Rajdhani', sans-serif;
     }
 
     .calculator-container {
@@ -759,6 +753,18 @@ height: 60px;
     .how-to-play-area {
         padding-left: 0px;
     }
+
+    .question-link a {
+        font-size: 90%;
+    }
+
+    .heading-area h2 {
+        margin-bottom: 0;
+    }
+
+    .players {
+        font-size: 90%;
+    }
 }
 
 
@@ -804,4 +810,88 @@ height: 60px;
     .how-to-play img {
         width: 70%;
     }
+
+    .question-link a {
+        font-size: 60%;
+    }
+
+    .question-link {
+        padding-bottom: 20px;
+    }
+
+    .heading-area h2 {
+        margin-bottom: 0;
+    }
+
+    .players {
+        font-size: 80%;
+    }
+
+    .feedback a {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 300px) {
+
+    /* properties of Cells Conatiner */
+    .cells {
+        order: 0;
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    /* properties of each cells */
+    .cell {
+        flex: 0 0 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #notification {
+        padding: 10px;
+        font-size: 100%;
+    }
+
+    .button {
+        font-size: 60%;
+    }
+
+    #tic-tac-toe {
+        width: 110px;
+        height: 140px;
+        margin-bottom: 10px;
+    }
+
+    /* properties of the index page calculator button*/
+    #calculator {
+        width: 110px;
+        height: 140px;
+        margin-bottom: 10px;
+    }
+
+    .buttons a {
+        font-size: 90%;
+    }
+
+    .calc-big-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .calc-buttons button {
+        width: 40px;
+        height: 40px;
+        font-size: 80%;
+    }
+    .display{
+        width:98%;
+        margin-bottom: 0;
+        height: 50px;
+        font-size: 25px;
+    }
+    .heading-area-calc{
+        font-size: 80%;
+    }
+
 }

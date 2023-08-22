@@ -28,6 +28,7 @@ The game is turn-based, where the aim is to line up a trifecta of circles or cro
   * [Lighthouse](#lighthouse)
     * [Desktop Results](#desktop-results )
     * [Mobile Results](#mobile-results)
+  * [Errors](#errors)
   * [Manual Testing](#manual-testing)
     * [Home Page](#home-page)
     * [Tic Tac Toe page](#tic-tac-toe-page)
@@ -202,9 +203,9 @@ The Chrome Developer Tools are great for debugging any website.
  Some of the screenshots are given below.
  ### Home page in deferent devices
   - iPad Mini
- <img src="assets/images/readme-images/Screenshot-ipad-mini.png" alt="Screenshot Ipad mini">
+ <img src="assets/images/readme-images/screenshot-ipad-mini.png" alt="Screenshot Ipad mini">
   - Surface pro
- <img src="assets/images/readme-images/Screenshot-surfacepro.png" alt="Screenshot Surface pro">
+ <img src="assets/images/readme-images/screenshot-surfacepro.png" alt="Screenshot Surface pro">
    - Iphone 12
  <img src="assets/images/readme-images/screenshot-iphone12.png" alt="Screenshot iPhone 12">
    - Samsung Galuxy S20 Ultra
@@ -278,7 +279,7 @@ All pages of the site are achieving a score above 90 across the 4 categories in 
 ## Errors
 During testing with the Chrome Developer Tools, an error was encountered: "Uncaught TypeError: Cannot read properties of null (reading 'querySelectorAll')". This error occurs when trying to access the querySelectorAll method on a null value, specifically a DOM element that doesn't exist.
 
-<img src="assets/images/readme-images/Error-tic-tac-toe.png" alt="Error found tic tac toe">
+<img src="assets/images/readme-images/error-tic-tac-toe.png" alt="Error found tic tac toe">
 
 To resolve this error, the script file was split for each page. By doing this, the code ensures that the DOM elements it needs to access are available before attempting to use the 'querySelectorAll' method.
 
