@@ -77,6 +77,7 @@ buttons.forEach(button => {
                 } else {
                     display.value += "1";
                 }
+                deleted = false;
                 break;
             case '2':
                 if (operation) {
@@ -85,6 +86,7 @@ buttons.forEach(button => {
                 } else {
                     display.value += "2";
                 }
+                deleted = false;
                 break;
             case '3':
                 if (operation) {
@@ -93,6 +95,7 @@ buttons.forEach(button => {
                 } else {
                     display.value += "3";
                 }
+                deleted = false;
                 break;
             case '4':
                 if (operation) {
@@ -101,6 +104,7 @@ buttons.forEach(button => {
                 } else {
                     display.value += "4";
                 }
+                deleted = false;
                 break;
             case '5':
                 if (operation) {
@@ -109,6 +113,7 @@ buttons.forEach(button => {
                 } else {
                     display.value += "5";
                 }
+                deleted = false;
                 break;
             case '6':
                 if (operation) {
@@ -117,6 +122,7 @@ buttons.forEach(button => {
                 } else {
                     display.value += "6";
                 }
+                deleted = false;
                 break;
             case '7':
                 if (operation) {
@@ -125,6 +131,7 @@ buttons.forEach(button => {
                 } else {
                     display.value += "7";
                 }
+                deleted = false;
                 break;
             case '8':
                 if (operation) {
@@ -133,6 +140,7 @@ buttons.forEach(button => {
                 } else {
                     display.value += "8";
                 }
+                deleted = false;
                 break;
             case '9':
                 if (operation) {
@@ -141,6 +149,7 @@ buttons.forEach(button => {
                 } else {
                     display.value += "9";
                 }
+                deleted = false;
                 break;
             case '0':
                 if (operation) {
@@ -417,7 +426,7 @@ document.addEventListener("keydown", function (event) {
             } else {
                 display.value += "1";
             }
-            document.getElementsByClassName('display')[0].focus();
+            deleted = false;
             break;
         case '2':
             if (operation) {
@@ -426,7 +435,7 @@ document.addEventListener("keydown", function (event) {
             } else {
                 display.value += "2";
             }
-            document.getElementsByClassName('display')[0].focus();
+            deleted = false;
             break;
         case '3':
             if (operation) {
@@ -435,7 +444,7 @@ document.addEventListener("keydown", function (event) {
             } else {
                 display.value += "3";
             }
-            document.getElementsByClassName('display')[0].focus();
+            deleted = false;
             break;
         case '4':
             if (operation) {
@@ -444,7 +453,7 @@ document.addEventListener("keydown", function (event) {
             } else {
                 display.value += "4";
             }
-            document.getElementsByClassName('display')[0].focus();
+            deleted = false;
             break;
         case '5':
             if (operation) {
@@ -453,7 +462,7 @@ document.addEventListener("keydown", function (event) {
             } else {
                 display.value += "5";
             }
-            document.getElementsByClassName('display')[0].focus();
+            deleted = false;
             break;
         case '6':
             if (operation) {
@@ -462,7 +471,7 @@ document.addEventListener("keydown", function (event) {
             } else {
                 display.value += "6";
             }
-            document.getElementsByClassName('display')[0].focus();
+            deleted = false;
             break;
         case '7':
             if (operation) {
@@ -471,7 +480,7 @@ document.addEventListener("keydown", function (event) {
             } else {
                 display.value += "7";
             }
-            document.getElementsByClassName('display')[0].focus();
+            deleted = false;
             break;
         case '8':
             if (operation) {
@@ -480,7 +489,7 @@ document.addEventListener("keydown", function (event) {
             } else {
                 display.value += "8";
             }
-            document.getElementsByClassName('display')[0].focus();
+            deleted = false;
             break;
         case '9':
             if (operation) {
@@ -489,7 +498,7 @@ document.addEventListener("keydown", function (event) {
             } else {
                 display.value += "9";
             }
-            document.getElementsByClassName('display')[0].focus();
+            deleted = false;
             break;
         case '0':
             if (operation) {
